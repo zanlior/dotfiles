@@ -1,0 +1,85 @@
+{
+    "position": "top",
+    "modules-left": [
+        "custom/launcher",
+        "mpris"
+    ],
+    "modules-center": [
+        "clock",
+        "hyprland/workspaces"
+    ],
+    "modules-right": [
+        "pulseaudio",
+        "network",
+        "swaync"
+    ],
+    "mpris": {
+        "format": "{player_icon} {title}",
+        "format-paused": "{status_icon} <i>{position} {artist}</i>",
+        "player-icons": {
+            "default": "",
+            "firefox": "",
+            "mpv": "",
+            "spotify": ""
+        },
+        "status-icons": {
+            "paused": ""
+        },
+        "max-length": 30
+    },
+    "clock": {
+        "format": "{:%I:%M %p}",
+        "format-alt": "{:%a, %b %d}"
+    },
+    "hyprland/workspaces": {
+        "format": "{icon}",
+        "format-icons": {
+            "1": "1",
+            "2": "2",
+            "3": "3",
+            "4": "4",
+            "5": "5",
+            "6": "六",
+            "7": "七",
+            "8": "八",
+            "9": "九",
+            "10": "十",
+            "default": "",
+            "urgent": ""
+        },
+        "persistent-workspaces": {
+            "*": 5
+        },
+        "on-click": "activate",
+        "on-scroll-down": "hyprctl dispatch workspace e+1",
+        "on-scroll-up": "hyprctl dispatch workspace e-1"
+    },
+    "pulseaudio": {
+        "format": "{volume}% {icon}",
+        "format-muted": "",
+        "format-icons": {
+            "headphone": "",
+            "hands-free": "",
+            "headset": "",
+            "phone": "",
+            "phone-muted": "",
+            "portable": "",
+            "car": "",
+            "default": [
+                "",
+                ""
+            ],
+        },
+        "scroll-step": 1,
+        "on-click": "pavucontrol",
+        "ignored-sinks": [
+            "Easy Effects Sink"
+        ]
+    },
+    "network": {
+        "interface": "eno2",
+        "format": "{ifname}",
+        "format-wifi": "",
+        "format-ethernet": "󰤥",
+    }
+}

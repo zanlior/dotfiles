@@ -1,0 +1,14 @@
+* {
+    /* Background Hierarchy - Darkened to bg0 */
+    bg0: #0f0f17;  /* Deepest blue-black (darker than original bg0) */
+    bg1: #1a1b26;  /* Elevated surfaces (original bg0) */
+    bg2: #161720;  /* Hover states (between bg0 and bg1) */
+    bg3: #24283b;  /* Borders (original bg1) */
+    
+    /* Text Colors */
+    fg0: #c0caf5;  /* Primary text (soft lavender-white) */
+  
+    /* Primary Accents - Blue → Purple Gradient */
+    pri0:     #5c7dd4;  /* Dark Blue - Main accent (darker) */
+    accent:   #5c7dd4;  /* Dark Blue - Selection highlight */
+}

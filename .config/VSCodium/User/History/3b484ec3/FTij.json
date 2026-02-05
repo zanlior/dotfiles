@@ -1,0 +1,21 @@
+{
+    "terminal.integrated.fontFamily": "monospace",
+    "editor.fontFamily": "'GeistMono Nerd Font Propo','Droid Sans Mono', monospace",
+    "workbench.colorTheme": "mocha-dark",
+    "workbench.iconTheme": "material-icon-theme",
+    "workbench.productIconTheme": "material-product-icons",
+    "workbench.statusBar.visible": false,
+    "editor.minimap.enabled": false,
+    "breadcrumbs.enabled": false,
+    "window.titleBarStyle": "native",
+    "window.customTitleBarVisibility": "never",
+    "window.customMenuBarAltFocus": false,
+    "window.enableMenuBarMnemonics": false,
+    "window.menuBarVisibility": "hidden",
+    "editor.padding.top": 15,
+    "editor.padding.bottom": 15,
+    "workbench.settings.applyToAllProfiles": [
+        "editor.padding.bottom",
+        "editor.padding.top"
+    ]
+}

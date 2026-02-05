@@ -1,0 +1,38 @@
+* {
+    /* Background Hierarchy - Darkened to match waybar */
+    bg0: #1e2326;  /* Deepest black-green (grey-850) */
+    bg1: #232a2e;  /* Elevated surfaces (grey-800) */
+    bg2: #2d353b;  /* Hover states (original bg0) */
+    bg3: #343f44;  /* Borders (original bg1) */
+    bg4: #3d484d;  /* Secondary borders (original bg2) */
+    
+    /* Text Colors */
+    fg0: #d3c6aa;  /* Primary text (soft cream) */
+    fg1: #e4dcc3;  /* Light text */
+    fg2: #9da9a0;  /* Muted grey text */
+    fg3: #7a8478;  /* Dimmed text */
+    
+    /* Primary Accents - Green → Aqua Gradient */
+    pri0:     #a7c080;  /* Green - Main accent, active workspace */
+    accent:   #a7c080;  /* Green - Selection highlight */
+    green:    #a7c080;  /* Main green */
+    aqua:     #83c092;  /* Aqua/Teal */
+    cyan:     #7fbbb3;  /* Cyan-blue */
+
+    /* Semantic Text on Surfaces */
+    on-sf0: #d3c6aa;  /* Main icons/text (fg0) */
+    on-sf1: #9da9a0;  /* Secondary text (fg2) */
+    
+    /* Utility Colors */
+    yellow: #dbbc7f;
+    orange: #e69875;
+    red:    #e67e80;
+    peach:  #e69875;
+    blue:   #7fbbb3;
+    purple: #d699b6;
+    line:   #4f585e;  /* Separators */
+    
+    /* Gradient Colors */
+    grad-start: #a7c080;  /* Green (left) */
+    grad-end:   #83c092;  /* Aqua (right) */
+}

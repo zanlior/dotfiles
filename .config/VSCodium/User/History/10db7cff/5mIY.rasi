@@ -1,0 +1,24 @@
+* {
+    /* Background Hierarchy */
+    bg0: #11111b;  /* Crust - Deepest bg */
+    bg1: #181825;  /* Mantle - Cards/Modules */
+    bg2: #1e1e2e;  /* Base - Hover states */
+    bg3: #313244;  /* Surface0 - Borders */
+    
+    /* Text Colors */
+    fg0: #cdd6f4;  /* Text - Primary */
+
+    /* Primary Accents */
+    pri0:     #b4befe;  /* Lavender - Active workspace, clock */
+    accent:   #89b4fa;  /* Blue - Selection highlight */
+
+    /* Utility Colors */
+    yellow: #f9e2af;
+    green:  #a6e3a1;
+    red:    #f38ba8;
+    peach:  #fab387;
+    teal:   #94e2d5;
+    cyan:   #89dceb;
+    purple:   #cba6f7;  /* For network module */
+    mauve:    #cba6f7;
+}

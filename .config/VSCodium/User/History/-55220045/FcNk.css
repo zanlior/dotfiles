@@ -1,0 +1,35 @@
+/* Rxyhn Theme - Unified Colors (Clean & Best Selection) */
+
+/* Background Hierarchy */
+@define-color bg0     #061115;  /* Deepest black-teal */
+@define-color bg1     #131e22;  /* Elevated surfaces */
+@define-color bg2     #1c272b;  /* Hover states */
+@define-color bg3     #313c40;  /* Borders */
+@define-color bg4     #3b464a;  /* Secondary borders */
+
+/* Text Colors */
+@define-color fg0     #D9D7D6;  /* Primary white */
+@define-color fg1     #E3E1E0;  /* Bright */
+@define-color fg2     #8A9499;  /* Muted grey-teal */
+@define-color fg3     #4f5a5e;  /* Dimmed */
+
+/* Primary Accents - Teal/Cyan (The Main Rxyhn Identity) */
+@define-color pri0        #7ACFE4;  /* Teal - Main accent/workspace active */
+@define-color accent      #67AFC1;  /* Cyan - Secondary highlight */
+@define-color grad-start  #7ACFE4;  /* Teal (gradient left) */
+@define-color grad-end    #67AFC1;  /* Cyan (gradient right) */
+
+/* Core Utility Colors (Best Selection Only) */
+@define-color teal      #7ACFE4;  /* Main teal */
+@define-color cyan      #67AFC1;  /* Main cyan */
+@define-color blue      #6791C9;  /* Blue (used for folders, files) */
+@define-color green     #8CD7AA;  /* Vibrant green (better pop than base green) */
+@define-color yellow    #f6dc95;  /* Sun yellow (brighter than #ecd28b) */
+@define-color red       #EE6A70;  /* Baby pink/red hybrid (best rxyhn warm color) */
+@define-color orange    #E9967E;  /* Peach/Orange merged (single warm accent) */
+
+/* Semantic */
+@define-color line         #222d31;
+@define-color folder_bg    @blue;
+@define-color pmenu_bg     @green;
+@define-color statusline_bg #0A1519;

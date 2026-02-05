@@ -1,0 +1,38 @@
+* {
+    /* Background Hierarchy */
+    bg0: #061115;  /* Deepest black-teal */
+    bg1: #131e22;  /* Elevated surfaces */
+    bg2: #1c272b;  /* Hover states */
+    bg3: #313c40;  /* Borders */
+    bg4: #3b464a;  /* Secondary borders */
+    
+    /* Text Colors */
+    fg0: #D9D7D6;  /* Primary white */
+    fg1: #E3E1E0;  /* Bright */
+    fg2: #8A9499;  /* Muted grey-teal */
+    fg3: #4f5a5e;  /* Dimmed */
+    
+    /* Primary Accents - Teal → Cyan Gradient (Rxyhn Identity) */
+    pri0:     #7ACFE4;  /* Teal - Main accent, active workspace */
+    accent:   #7ACFE4;  /* Teal - Selection highlight */
+    teal:     #7ACFE4;  /* Main teal */
+    cyan:     #67AFC1;  /* Secondary cyan */
+    purple:   #C488EC;  /* Purple - Available but not primary */
+    pink:     #EE6A70;  /* Dark pink - Urgent/warning */
+
+    /* Semantic Text on Surfaces */
+    on-sf0: #D9D7D6;  /* Main icons/text (fg0) */
+    on-sf1: #8A9499;  /* Secondary text (fg2) */
+    
+    /* Utility Colors */
+    yellow: #ecd28b;
+    green:  #8CD7AA;
+    red:    #DF5B61;
+    peach:  #E89982;
+    blue:   #6791C9;
+    line:   #222d31;  /* Separators */
+    
+    /* Gradient Colors */
+    grad-start: #7ACFE4;  /* Teal (left) */
+    grad-end:   #67AFC1;  /* Cyan (right) */
+}

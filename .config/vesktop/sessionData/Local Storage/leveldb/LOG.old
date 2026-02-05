@@ -1,0 +1,5 @@
+2026/02/05-18:42:55.162 2919 Reusing MANIFEST /home/user0/.config/vesktop/sessionData/Local Storage/leveldb/MANIFEST-000001
+2026/02/05-18:42:55.174 2919 Recovering log #58
+2026/02/05-18:42:55.190 2919 Level-0 table #62: started
+2026/02/05-18:42:55.194 2919 Level-0 table #62: 43084 bytes OK
+2026/02/05-18:42:55.201 2919 Delete type=0 #58

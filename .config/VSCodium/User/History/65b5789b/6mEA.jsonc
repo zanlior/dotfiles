@@ -1,0 +1,39 @@
+{
+    "position": "top",
+    "modules-left": [
+        "custom/launcher",
+        "mpris"
+    ],
+    "modules-center": [
+        "clock",
+        "hyprland/workspaces"
+    ],
+    "modules-right": [
+        "pulseaudio",
+        "network",
+        "swaync"
+    ],
+    "mpris": {
+        "format": "{player_icon} {title}",
+        "format-paused": "{status_icon} <i>{position} {artist}</i>",
+        "player-icons": {
+            "default": "",
+            "firefox": "",
+            "mpv": "",
+            "spotify": ""
+        },
+        "status-icons": {
+            "paused": ""
+        },
+        "max-length": 30
+    },
+    "clock": {
+        "interval": 60,
+        "format": "{:%I:%M %p}",
+        "max-length": 25
+    },
+    "hyprland/workspaces":{
+        "format": ""
+    },
+    "persistent-workspaces":5 
+}

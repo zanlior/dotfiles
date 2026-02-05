@@ -1,0 +1,17 @@
+@define-color background   #11111b;  /* bg0 - Crust - Deepest background */
+@define-color surface      #181825;  /* bg1 - Mantle - Elevated surfaces */
+@define-color surface-hover #1e1e2e; /* bg2 - Base - Hover states */
+@define-color border-color #313244;  /* bg3 - Surface0 - Borders/dividers */
+
+@define-color text         #cdd6f4;  /* fg0 - Text - Primary text */
+@define-color text-muted   #a6adc8;  /* fg2 - Subtext0 - Muted/secondary */
+@define-color text-dim     #6c7086;  /* fg3 - Overlay0 - Placeholder text */
+
+@define-color accent       #89b4fa;  /* bg4 - Blue - Primary accent (selected items) */
+@define-color accent-alt   #cba6f7;  /* bg5 - Mauve - Secondary accent */
+
+@define-color red          #f38ba8;
+@define-color orange       #fab387;
+@define-color yellow       #f9e2af;
+@define-color green        #a6e3a1;
+@define-color cyan         #89dceb;

@@ -1,0 +1,71 @@
+// Default Theme Color Palette Tokyo Night
+// Red
+$red-light: #f7768e;
+$red-dark: #ff2d5e;
+
+// Pink
+$pink-light: #ff4499;
+$pink-dark: #f71a88;
+
+// Purple
+$purple-light: #bb9af7;
+$purple-dark: #9d7cd8;
+
+// Blue
+$blue-light: #7aa2f7;
+$blue-dark: #565f99;
+
+// Teal (aqua)
+$teal-light: #2ac3de;
+$teal-dark: #14919e;
+
+// Green
+$green-light: #9ece6a;
+$green-dark: #6cb550;
+
+// Yellow
+$yellow-light: #e0af68;
+$yellow-dark: #c68e51;
+
+// Orange
+$orange-light: #ff9e64;
+$orange-dark: #d65d34;
+
+// Grey (Dark progression: 050=lightest text, 900=bg0 darkest)
+$grey-050: #c0caf5;   // fg - Primary text (bluish white)
+$grey-100: #a9b1d6;   // fg_dark - Bright text
+$grey-150: #787c99;   // Muted grey-indigo text
+$grey-200: #565f89;   // comment - Secondary muted
+$grey-250: #414868;   // Darker muted
+$grey-300: #3b4261;   // gutter - Borders/dividers
+$grey-350: #292e42;   // bg_highlight - Hover states
+$grey-400: #24283b;   // bg_dark - Elevated surfaces
+$grey-450: #1e2130;   // Between bg1 and bg0
+$grey-500: #1a1b26;   // bg - Main background (waybar bg)
+$grey-550: #161720;   // Slightly darker surface
+$grey-600: #131420;   // Darker shade
+$grey-650: #101229;   // Deep dark
+$grey-700: #0c0d1f;   // Extra dark
+$grey-750: #090a18;   // Near black
+$grey-800: #060712;   // Almost black
+$grey-850: #03040b;   // Nearly black
+$grey-900: #1a1b26;   // bg - Deepest blue-black (waybar bg0)
+$grey-950: #010101;   // Pure black
+
+// White
+$white: #c0caf5;
+
+// Black
+$black: #1a1b26;
+
+// Button (dark variant - using Tokyo Night colors)
+$button-close: if($variant == 'light', #f7768e, #ff8aa1);
+$button-max: if($variant == 'light', #9ece6a, #b3e085);
+$button-min: if($variant == 'light', #e0af68, #f5c278);
+
+// Link
+$links: #7aa2f7;
+
+// Theme
+$default-light: $blue-light;   // Blue for Tokyo Night (matches time color)
+$default-dark: $blue-dark;     // Dark blue

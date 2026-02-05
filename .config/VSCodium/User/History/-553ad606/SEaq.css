@@ -1,0 +1,117 @@
+@import 'colors/mocha.css';
+
+* {
+    border: none;
+    border-radius: 0px;
+
+    font-family: "Adwaita Sans", "JetBrainsMono Nerd Font Propo", sans-serif;
+    font-weight: 700;
+    font-size: 16px;
+
+    min-height: 25px;
+    padding: 0;
+    margin: 0;
+}
+
+window#waybar {
+    background: transparent;
+}
+
+.modules-center {
+    margin: 5px 0 0 0;
+    background: @bg0;
+    border-radius: 20px;
+    padding: 0 2px 0 12px;
+    min-height: 25px;
+    margin: 5px 10px;
+}
+
+tooltip,
+tooltip.background,
+tooltip decoration,
+.tooltip {
+    background: transparent;
+    background-color: transparent;
+    border: none;
+    box-shadow: none;
+    border-radius: 0;
+}
+
+tooltip label {
+    color: @pri0;
+    background-color: @bg0;
+    padding: 6px 12px;
+    border-radius: 15px;
+}
+
+#workspaces {
+    padding: 6px 6px;
+    margin: 0 0 0 12px;
+}
+
+#workspaces button {
+    padding: 0px 6px;
+    margin: 0px 3px;
+    border-radius: 45px;
+    background-color: @bg1;
+    color: @bg1;
+    transition: all 0.3s ease-in-out;
+}
+
+#workspaces button.active {
+    background: linear-gradient(135deg, @grad-start 30%, @grad-end 80%);
+    color: @bg0;
+    min-height: 20px;
+    min-width: 45px;
+    transition: all 0.3s ease-in-out;
+}
+
+#workspaces button:hover {
+    background: linear-gradient(135deg, @grad-start 50%, @grad-end 100%);
+    color: @bg0;
+    min-width: 40px;
+    background-size: 400% 400%;
+}
+
+#clock {
+    color: @pri0;
+    border-radius: 16px;
+    font-size: 15px;
+}
+
+#mpris {
+    color: @on_sf0;
+    margin: 5px 0 0 0;
+    background: @bg0;
+    border-radius: 20px;
+    padding: 0 12px;
+    min-height: 25px;
+    margin: 5px 10px;
+}
+
+#pulseaudio {
+    color: @yellow;
+    background-color: @bg0;
+    padding: 0 10px;
+    font-size: 14px;
+    border-radius: 25px;
+    margin: 5px 3px;
+}
+
+#network {
+    color: @purple;
+    background-color: @bg0;
+    padding: 0 11px;
+    font-size: 14px;
+    border-radius: 25px;
+    margin: 5px 3px;
+}
+
+#custom-notification {
+    color: @on_sf0;
+    background-color: @bg0;
+    padding: 0 13px;
+    font-size: 14px;
+    border-radius: 25px;
+    margin: 5px 3px;
+}

@@ -1,0 +1,14 @@
+* {
+    /* Background Hierarchy */
+    bg0: #040c0e;  /* Deepest black-teal (darker) */
+    bg1: #061115;  /* Elevated surfaces (original bg0) */
+    bg2: #0d181c;  /* Hover states */
+    bg3: #131e22;  /* Borders (original bg1) */
+    
+    /* Text Colors */
+    fg0: #D9D7D6;  /* Primary white */
+
+    /* Primary Accents - Dark Teal → Teal Gradient */
+    pri0:     #5BA8B8;  /* Dark Teal - Main accent (darker) */
+    accent:   #5BA8B8;  /* Dark Teal - Selection highlight */
+}

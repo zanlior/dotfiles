@@ -1,0 +1,71 @@
+// Default Theme Color Palette Tokyo Night
+// Red
+$red-light: #f7768e;
+$red-dark: #ff2d5e;
+
+// Pink
+$pink-light: #ff4499;
+$pink-dark: #f71a88;
+
+// Purple
+$purple-light: #bb9af7;
+$purple-dark: #9d7cd8;
+
+// Blue
+$blue-light: #7aa2f7;
+$blue-dark: #565f99;
+
+// Teal (aqua)
+$teal-light: #2ac3de;
+$teal-dark: #14919e;
+
+// Green
+$green-light: #9ece6a;
+$green-dark: #6cb550;
+
+// Yellow
+$yellow-light: #e0af68;
+$yellow-dark: #c68e51;
+
+// Orange
+$orange-light: #ff9e64;
+$orange-dark: #d65d34;
+
+// Grey (Dark progression: 050=lightest dark surface, 900=bg0 darkest)
+$grey-050: #565f89;
+$grey-100: #3b4261;
+$grey-150: #313650;
+$grey-200: #292e42;
+$grey-250: #24283b;
+$grey-300: #1e2130;
+$grey-350: #1c1e36;
+$grey-400: #787c99;
+$grey-450: #a9b1d6;
+$grey-500: #c0caf5;
+$grey-550: #51597d;
+$grey-600: #414868;
+$grey-650: #363c59;
+$grey-700: #242640;
+$grey-750: #1f2336;
+$grey-800: #1a1c29;
+$grey-850: #161720;
+$grey-900: #1a1b26;
+$grey-950: #010101;
+
+// White
+$white: #c0caf5;
+
+// Black
+$black: #1a1b26;
+
+// Button
+$button-close: if($variant == 'light', #f7768e, #ff8aa1);
+$button-max: if($variant == 'light', #9ece6a, #b3e085);
+$button-min: if($variant == 'light', #e0af68, #f5c278);
+
+// Link
+$links: #7aa2f7;
+
+// Theme
+$default-light: $blue-light;
+$default-dark: $blue-dark;

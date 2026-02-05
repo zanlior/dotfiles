@@ -1,0 +1,131 @@
+@import 'colors/mocha.css';
+
+* {
+    border: none;
+    border-radius: 0px;
+
+    font-family: "Adwaita Sans", "JetBrainsMono Nerd Font Propo", sans-serif;
+    font-weight: bold;
+    font-size: 16px;
+
+    min-height: 25px;
+    padding: 0;
+    margin: 0;
+}
+
+window#waybar {
+    background: transparent;
+}
+
+.modules-center {
+    background: @bg1;
+    color: @bg3;
+    border-radius: 14px;
+    padding: 2px 12px;
+    min-height: 25px;
+}
+
+tooltip {
+    background: transparent;
+}
+
+tooltip label {
+    color: @primary;
+    padding: 6px;
+}
+
+#workspaces {
+    padding: 2px 3px;
+    margin: 0 0 0 12px;
+    border-radius: 18px;
+    color: @fg;
+}
+
+#workspaces button {
+    padding: 0px 6px;
+    margin: 0px 3px;
+    border-radius: 45px;
+    color: @fg;
+    background-color: @primary;
+    transition: all 0.3s ease-in-out;
+}
+
+#workspaces button.active {
+    background-color: @bg1;
+    color: @fg;
+    min-height: 25px;
+    min-width: 42px;
+    transition: all 0.3s ease-in-out;
+}
+
+#workspaces button:hover {
+    background-color: @secondary;
+    color: @bg0;
+    border-radius: 16px;
+    min-width: 42px;
+    background-size: 400% 400%;
+}
+
+#workspaces button.urgent {
+    background-color: @error;
+    color: @bg0;
+    border-radius: 16px;
+    min-width: 45px;
+    background-size: 400% 400%;
+    transition: all 0.3s ease-in-out;
+}
+
+#battery,
+#pulseaudio,
+#network,
+#clock {
+    background: transparent;
+    padding: 0 5px;
+}
+
+#clock {
+    color: @tertiary;
+}
+
+#custom-notification {
+    color: @fg;
+    margin: 0 12px 0 12px;
+    padding: 0 10px 0 10px;
+}
+
+#pulseaudio {
+    color: @yellow;
+}
+
+#network {
+    color: @purple;
+}
+
+#battery {
+    color: @green;
+}
+
+#mpris {
+    font-weight: normal;
+    background-color: @bg1;
+    padding: 0 8px;
+    margin: 0 2px;
+    border-radius: 8px;
+    color: @primary;
+    transition: all 0.3s ease;
+}
+
+#mpris.playing {
+    color: @aqua;
+    background-color: @bg1;
+}
+
+#mpris.paused {
+    color: @aqua;
+    background-color: @bg1;
+}
+
+#mpris.stopped {
+    background-color: transparent;
+    color: transparent;
+}

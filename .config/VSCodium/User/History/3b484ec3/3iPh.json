@@ -1,0 +1,5 @@
+{
+    "editor.fontFamily": "'JetBrainsMono Nerd Font Propo', monospace",
+    "workbench.colorTheme": "Default Light+",
+    "python.languageServer": "Pylance"
+}

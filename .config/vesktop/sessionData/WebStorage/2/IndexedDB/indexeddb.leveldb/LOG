@@ -1,0 +1,14 @@
+2026/02/05-18:45:02.711 29bd Reusing MANIFEST /home/user0/.config/vesktop/sessionData/WebStorage/2/IndexedDB/indexeddb.leveldb/MANIFEST-000001
+2026/02/05-18:45:02.711 29bd Recovering log #10
+2026/02/05-18:45:02.711 29bd Reusing old log /home/user0/.config/vesktop/sessionData/WebStorage/2/IndexedDB/indexeddb.leveldb/000010.log 
+2026/02/05-18:45:02.711 29bd Delete type=2 #8
+2026/02/05-18:45:02.727 29de Level-0 table #15: started
+2026/02/05-18:45:02.730 29de Level-0 table #15: 1401 bytes OK
+2026/02/05-18:45:02.736 29de Delete type=0 #10
+2026/02/05-18:45:02.737 29bd Manual compaction at level-0 from '\x00\x06\x00\x00\x00' @ 72057594037927935 : 1 .. '\x00\x07\x00\x00\x00' @ 0 : 0; will stop at '\x00\x06\x00\x00\x05' @ 216 : 1
+2026/02/05-18:45:02.737 29bd Compacting 1@0 + 1@1 files
+2026/02/05-18:45:02.740 29bd Generated table #16@0: 75 keys, 1385 bytes
+2026/02/05-18:45:02.740 29bd Compacted 1@0 + 1@1 files => 1385 bytes
+2026/02/05-18:45:02.746 29bd compacted to: files[ 0 1 1 0 0 0 0 ]
+2026/02/05-18:45:02.746 29bd Delete type=2 #15
+2026/02/05-18:45:02.747 29bd Manual compaction at level-0 from '\x00\x06\x00\x00\x05' @ 216 : 1 .. '\x00\x07\x00\x00\x00' @ 0 : 0; will stop at (end)

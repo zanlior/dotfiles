@@ -1,0 +1,14 @@
+* {
+    /* Background Hierarchy - Darkened to match waybar */
+    bg0: #1e2326;  /* Deepest black-green (grey-850) */
+    bg1: #232a2e;  /* Elevated surfaces (grey-800) */
+    bg2: #2d353b;  /* Hover states (original bg0) */
+    bg3: #343f44;  /* Borders (original bg1) */
+    
+    /* Text Colors */
+    fg0: #d3c6aa;  /* Primary text (soft cream) */
+    
+    /* Primary Accents - Green → Aqua Gradient */
+    pri0:     #a7c080;  /* Green - Main accent, active workspace */
+    accent:   #a7c080;  /* Green - Selection highlight */
+}

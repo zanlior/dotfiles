@@ -1,0 +1,6 @@
+2026/01/31-17:46:20.433 eddf Creating DB /home/user0/.config/vesktop/sessionData/IndexedDB/https_discord.com_0.indexeddb.leveldb since it was missing.
+2026/01/31-17:46:20.448 eddf Reusing MANIFEST /home/user0/.config/vesktop/sessionData/IndexedDB/https_discord.com_0.indexeddb.leveldb/MANIFEST-000001
+2026/01/31-17:46:44.941 edff Level-0 table #5: started
+2026/01/31-17:46:44.952 edff Level-0 table #5: 9191 bytes OK
+2026/01/31-17:46:44.963 edff Delete type=0 #3
+2026/01/31-17:46:44.963 edff Manual compaction at level-0 from (begin) .. (end); will stop at (end)

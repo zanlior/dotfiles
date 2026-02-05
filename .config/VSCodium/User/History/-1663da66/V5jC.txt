@@ -1,0 +1,10 @@
+# Netscape HTTP Cookie File
+# https://curl.haxx.se/rfc/cookie_spec.html
+# This is a generated file! Do not edit.
+
+.youtube.com	TRUE	/	TRUE	1785774166	__Secure-YNID	15.YT=N9nJ-D1IH8V6jd3GUzS8ggphAqfsMo2otVmebIiEXa4jrTkaoG9a1f5BKwBIcElt5xDA8xcAlo-UzljfRdNQaVuwnM31cdfG5n1rHk5OdlErgnGSqMjBsQVZD_X9e8uKlkKkdGJUSsq8ypTHIgN8Lw32flnbP06RDHynoEdJ-6YJR2T1ZoVfgeItc23Eq9-i8L3Nf6FYNWY78OaXwPpeOEu1VIRr-XJ_XgVjOso7e2ziAbGXpNcFAEh7lC5rM_adb4wMSWAoFyTgrHVLyzxi_vn5FD9ecjhxPWcsOhOm5-EgALwaXZkiSMIRp3mqYoFpvNGu6eqhzmQQhOqhSYVLDg
+.youtube.com	TRUE	/	TRUE	1770223966	GPS	1
+.youtube.com	TRUE	/	TRUE	0	YSC	JYZk5Io_Iu4
+.youtube.com	TRUE	/	TRUE	1785774168	VISITOR_INFO1_LIVE	4CvjiuWp704
+.youtube.com	TRUE	/	TRUE	1785774168	VISITOR_PRIVACY_METADATA	CgJBRRIEGgAgEQ%3D%3D
+.youtube.com	TRUE	/	TRUE	1804782168	PREF	f6=40000000&tz=Asia.Dubai

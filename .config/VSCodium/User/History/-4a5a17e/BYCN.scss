@@ -1,0 +1,71 @@
+// Default Theme Color Palette Rxyhn
+// Red
+$red-light: #DF5B61;
+$red-dark: #c54b51;
+
+// Pink
+$pink-light: #EE6A70;
+$pink-dark: #F16269;
+
+// Purple
+$purple-light: #C488EC;
+$purple-dark: #BC83E3;
+
+// Blue
+$blue-light: #6791C9;
+$blue-dark: #4a6fa3;
+
+// Teal (aqua) - Rxyhn signature
+$teal-light: #7ACFE4;
+$teal-dark: #67AFC1;
+
+// Green
+$green-light: #8CD7AA;
+$green-dark: #6bc48a;
+
+// Yellow
+$yellow-light: #ecd28b;
+$yellow-dark: #d4b96f;
+
+// Orange
+$orange-light: #E89982;
+$orange-dark: #cd7d67;
+
+// Grey (Dark progression: 900=bg0 darkest, 050=brightest text)
+$grey-050: #D9D7D6;   // fg0 - Primary text (lightest)
+$grey-100: #a0a8a8;   // Slightly muted light
+$grey-150: #8A9499;   // fg2 - Muted text
+$grey-200: #5c6666;   // Mid-dark grey
+$grey-250: #4f5a5e;   // fg3 - Dimmed
+$grey-300: #3b464a;   // bg4 - Secondary borders
+$grey-350: #313c40;   // bg3 - Borders
+$grey-400: #1c272b;   // bg2 - Hover states
+$grey-450: #131e22;   // bg1 - Elevated surfaces
+$grey-500: #0d181c;   // Between bg1 and bg0
+$grey-550: #061115;   // bg0 - Deepest background
+$grey-600: #050f12;   // Darker shade
+$grey-650: #040c0e;   // Very dark
+$grey-700: #03090b;   // Extra dark
+$grey-750: #020608;   // Near black
+$grey-800: #010405;   // Almost black
+$grey-850: #010203;   // Nearly black
+$grey-900: #061115;   // bg0 - Deepest black-teal (main bg)
+$grey-950: #020203;   // Deepest black
+
+// White (text color for dark theme)
+$white: #D9D7D6;
+
+// Black (background color)
+$black: #061115;
+
+// Button (dark variant - using rxyhn colors)
+$button-close: if($variant == 'light', #DF5B61, #ff6c73);
+$button-max: if($variant == 'light', #8CD7AA, #9deebb);
+$button-min: if($variant == 'light', #ecd28b, #ffd88f);
+
+// Link
+$links: #7ACFE4;
+
+// Theme
+$default-light: $purple-light;   // Purple for rxyhn
+$default-dark: $purple-dark;     // Dark purple

@@ -1,0 +1,7 @@
+{
+    "terminal.integrated.fontFamily": "monospace",
+    "editor.fontFamily": "'JetBrainsMono Nerd Font Mono', monospace",
+    "workbench.colorTheme": "mocha-dark",
+    "workbench.iconTheme": "material-icon-theme",
+    "workbench.productIconTheme": "material-product-icons"
+}

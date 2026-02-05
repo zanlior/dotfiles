@@ -1,0 +1,8 @@
+[Default Applications]
+x-scheme-handler/discord=vesktop.desktop
+application/x-zerosize=kitty.desktop
+
+[Added Associations]
+application/x-zerosize=kitty.desktop;
+text/x-csrc=codium-wayland.desktop;
+application/json=codium-wayland.desktop;
