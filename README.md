@@ -25,6 +25,14 @@ API credentials and private prayer location/audio settings are absent. The praye
    python3 scripts/install-desktop-deps.py --apply
    ```
 
+   This installs `cliphist`, `matugen`, `python-libsass` and the other listed prerequisites through pacman. The apply step then verifies that clipboard/theme commands are on PATH, Matugen produces the JSON palette expected by the bar, and system Python can import `sass` and compile SCSS. Missing packages or failed checks stop setup with an error. No pip installation or copied helper binaries are needed.
+
+   To repeat just these checks later, without installing anything:
+
+   ```bash
+   python3 scripts/install-desktop-deps.py --check-only
+   ```
+
 4. Preview configuration restoration with desktop applications closed:
 
    ```bash
