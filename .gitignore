@@ -1,0 +1,18 @@
+# Private profiles, generated restore state and credentials never belong in this repo.
+.restore-*/
+private/
+secrets/
+.env
+.env.*
+**/auth.json
+**/credentials*
+**/prayer-api.json
+**/prayer-time-api*.txt
+**/prayer-reminders.json
+**/*.db
+**/*.sqlite*
+**/*.log
+**/__pycache__/
+**/node_modules/
+**/*.before-*
+**/.git/

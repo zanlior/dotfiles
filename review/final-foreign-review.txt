@@ -1,0 +1,9 @@
+artcraft-launcher
+aseprite
+bedrock-on-linux-bin
+bibata-cursor-theme-bin
+obs-pipewire-audio-capture
+ttf-inter-hinted
+ttf-rubik-vf
+vesktop
+vscodium-bin

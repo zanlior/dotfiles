@@ -1,0 +1,28 @@
+{
+  "user_review_complete": true,
+  "list_sha256": {
+    "final-repository-packages.txt": "30b13d49f00ccdb59e25f28270b75be5ce850092a8e3f165c013d7a34b6e2290",
+    "final-foreign-review.txt": "bfedc61a728a6247cbffd81c7343938053ef179b76a81313c57a8c5f7f63b415",
+    "final-foreign-dependency-review.txt": "641d49bf6ed8c1ebf5e2068d5b94eeffd925a18da077d8753180601c4bc7064b",
+    "final-base-coverage-check.txt": "70c87f957c275e9ea688cec082d287c472961e64b6f0954b34c4a48fdcd4c2a4",
+    "final-system-review.txt": "571dd631c794d0f44350411c2d7ccd0f19497fc6ae0c748785827dcc18514ec7",
+    "final-manual-review.txt": "9efe7132be657485aab4f0ac31fa288f996ef443453d14de0acebc8bd3744993",
+    "dependency-exclusion-warnings.txt": "ef8bb2d385c043bba8d30f9a047c666c9136068fc49fb7980e8b695ed0a45b17"
+  },
+  "excluded": [
+    "docker",
+    "docker-compose",
+    "feh",
+    "keepassxc",
+    "ollama-cuda",
+    "onlinefix-linux-launcher-bin",
+    "python",
+    "python-defusedxml",
+    "python-packaging",
+    "python-pip",
+    "rofi",
+    "uv",
+    "waybar"
+  ],
+  "dependencies_resolved_by": "pacman on new installation; excluded dependency may remain required"
+}

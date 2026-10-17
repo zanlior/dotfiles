@@ -1,0 +1,48 @@
+# CachyOS desktop reinstall snapshot
+
+Sanitized Hyprland Lua, custom Island/Quickshell shell, nwg-look/GTK appearance, themes, icons, Kitty, notification configuration, Neovim configuration and the ZuriTheme VSCodium extension. Relevant `.local` appearance files are included. These are desktop sources/settings, not a complete personal-data or recovery backup.
+
+The original Hyprland launch path `.config/hypr/quickshell` and the separate `.config/quickshell/island` profile differed; both runtime snapshots are preserved. The second profile is stored as actual source files, so it no longer depends on a symlink to a personal development worktree. Project histories, backups, arbitrary project docs, profiles, databases, credentials, clipboard history, browser/media activity, prayer schedules and runtime state are excluded.
+
+API credentials and private prayer location/audio settings are absent. The prayer endpoint is loaded from private local configuration after a separate restore. Preserve the `prayer-time-api-*.txt` file created in your **Documents** folder in your private backup; it is deliberately not on GitHub. The original request uses a keyless public service; the file records the endpoint and settings needed to restore it. Other user files such as wallpapers and azan audio must be recovered from personal backups.
+
+## On the fresh installation
+
+1. Install CachyOS with Hyprland and matching NVIDIA support. Fully update it. Confirm networking, audio, rendering, login/session and a usable terminal. Review the actual installer defaults; the current official profile may start Noctalia, while this snapshot uses the custom shell. Use one intended shell/session setup.
+2. Clone this repository. All scripts default to preview; review them before applying. No script changes machine-specific `/etc`, partitions, boot entries or services.
+3. Check/install desktop prerequisites:
+
+   ```bash
+   python3 scripts/install-desktop-deps.py --dry-run
+   # On the NEW system only, once reviewed:
+   python3 scripts/install-desktop-deps.py --apply
+   ```
+
+4. Preview configuration restoration with desktop applications closed:
+
+   ```bash
+   python3 scripts/restore-desktop.py --dry-run
+   python3 scripts/restore-desktop.py --apply
+   ```
+
+   Conflicting destination files are moved to a uniquely named private `.dotfiles-conflicts` folder. Identical files are skipped. Existing parent symlinks require explicit review so writes cannot escape the intended home. Home paths are materialized from `@@HOME@@` templates. Theme assets are stored in checksum-verified compressed parts; their full archive and all member paths are checked before restoration. Do not manually extract parts as independent archives.
+
+5. Restore prayer setup from your private Documents backup, without putting it into this Git checkout:
+
+   ```bash
+   python3 scripts/restore-prayer.py --private-file /path/to/prayer-time-api-YOUR-DATE.txt --dry-run
+   python3 scripts/restore-prayer.py --private-file /path/to/prayer-time-api-YOUR-DATE.txt --apply
+   ```
+
+6. Compare `review/final-base-coverage-check.txt` with installer-provided software. `review/final-repository-packages.txt` lists reviewed supplemental applications; `scripts/restore-apps.py` checks availability before any optional installation. Foreign packages and uncertain kernel/NVIDIA/boot/system packages are separate manual review lists. Build foreign recipes as a normal user only after reviewing their source and PKGBUILD; they are not assumed to be AUR packages.
+
+## Important limits
+
+- Python is a runtime requirement for this custom shell and retained apps. Optional Python development tools and Docker were excluded, not required runtime dependencies.
+- `cliphist`, `matugen` and `python-libsass` are explicit prerequisites in place of old machine-specific binaries. A future version may change command-line/API compatibility. Vendored `_sass`/mprisence binaries were not uploaded. Optional browser media bridging requires a separately reviewed trusted mprisence installation; ordinary MPRIS media support remains in the source.
+- The matching selected Colloid theme is included. Bibata cursors, Adwaita icons/fonts and Nerd fonts must be installed from the package lists or reviewed trusted packages. Fonts/themes from outside this snapshot are not silently assumed present.
+- Dynamic Material You theme generation needs the bundled audited Sass/design sources and `python-libsass`; wallpapers and other personal images/audio are not included. Private runtime preferences/history are not recreated merely by copying `.config`.
+- Only the ZuriTheme VSCodium extension is retained. Other extensions and their private state were excluded at your request. Browser profiles, game saves, passwords, all Codex data and personal projects belong in your private backup, not this public repository.
+- New Hyprland/Qt/Quickshell versions may need configuration adaptation. Check launchers, notifications, locking/permission prompts, clipboard, screenshots, brightness, fonts/cursor, theme switching and prayer settings before relying on the desktop.
+
+The snapshot was scanned for recognized credentials and private prayer values, including compressed asset contents. Syntax/checksum/path checks are distinct from a successful restore. No installation or desktop/private-state restoration was performed during preparation.

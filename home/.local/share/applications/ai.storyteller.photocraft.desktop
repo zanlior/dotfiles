@@ -1,0 +1,10 @@
+[Desktop Entry]
+Type=Application
+Name=PhotoCraft
+Comment=Image editing
+Exec="@@HOME@@/Applications/photocraft-0.8.2-linux-x86_64.AppImage" %F
+Icon=ai.storyteller.photocraft
+Terminal=false
+Categories=Graphics;2DGraphics;RasterGraphics;Photography;
+StartupWMClass=photocraft
+X-ArtCraft-Launcher=true

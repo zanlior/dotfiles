@@ -1,0 +1,23 @@
+{
+  "name": "monochrome",
+  "entry": {
+    "colors": [
+      "#000000",
+      "#171717",
+      "#292929",
+      "#eeeeee",
+      "#999999",
+      "#dddddd"
+    ],
+    "samples": [
+      "#555555",
+      "#777777",
+      "#999999",
+      "#bbbbbb",
+      "#dddddd",
+      "#eeeeee"
+    ],
+    "gtk": "Island-monochrome",
+    "source": "monochrome"
+  }
+}

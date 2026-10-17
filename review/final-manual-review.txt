@@ -1,0 +1,9 @@
+pdfcraft-0.7.1-linux-x86_64.AppImage | Restore Applications directory and matching private profiles; inspect signatures/compatibility before use.
+wordcraft-0.6.1-linux-x86_64.AppImage | Restore Applications directory and matching private profiles; inspect signatures/compatibility before use.
+photocraft-0.8.2-linux-x86_64.AppImage | Restore Applications directory and matching private profiles; inspect signatures/compatibility before use.
+filmcraft-0.7.2-linux-x86_64.AppImage | Restore Applications directory and matching private profiles; inspect signatures/compatibility before use.
+deckcraft-0.6.1-linux-x86_64.AppImage | Restore Applications directory and matching private profiles; inspect signatures/compatibility before use.
+gridcraft-0.6.1-linux-x86_64.AppImage | Restore Applications directory and matching private profiles; inspect signatures/compatibility before use.
+soundcraft-0.6.1-linux-x86_64.AppImage | Restore Applications directory and matching private profiles; inspect signatures/compatibility before use.
+Codex local launcher | Private home backup plus source/dependency review; reconcile duplicate pacman/global launchers on PATH.
+ZuriTheme.zuritheme | Restore vetted nonexcluded extension directories or install from a trusted compatible registry; extension state stays private.

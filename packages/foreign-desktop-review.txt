@@ -1,0 +1,2 @@
+bibata-cursor-theme-bin
+# Install only from a reviewed original/trusted source; foreign does not prove AUR.
