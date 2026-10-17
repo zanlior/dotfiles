@@ -9,7 +9,14 @@ API credentials and private prayer location/audio settings are absent. The praye
 ## On the fresh installation
 
 1. Install CachyOS with Hyprland and matching NVIDIA support. Fully update it. Confirm networking, audio, rendering, login/session and a usable terminal. Review the actual installer defaults; the current official profile may start Noctalia, while this snapshot uses the custom shell. Use one intended shell/session setup.
-2. Clone this repository. All scripts default to preview; review them before applying. No script changes machine-specific `/etc`, partitions, boot entries or services.
+2. Download the snapshot and enter its folder (Git and Python 3 must be available):
+
+   ```bash
+   git clone --depth=1 https://github.com/zanlior/dotfiles.git "$HOME/dotfiles"
+   cd "$HOME/dotfiles"
+   ```
+
+   Cloning only downloads the kit. All scripts default to preview; review them before applying. No script changes machine-specific `/etc`, partitions, boot entries or services.
 3. Check/install desktop prerequisites:
 
    ```bash
@@ -24,6 +31,18 @@ API credentials and private prayer location/audio settings are absent. The praye
    python3 scripts/restore-desktop.py --dry-run
    python3 scripts/restore-desktop.py --apply
    ```
+
+   `--apply` automatically copies the included files to their matching locations in your current home directory; no manual copying is needed:
+
+   | Repository location | Restore destination |
+   | --- | --- |
+   | `home/.config/hypr/` | `~/.config/hypr/` |
+   | `home/.config/quickshell/` | `~/.config/quickshell/` |
+   | Other `home/.config/` settings | Matching paths under `~/.config/` |
+   | `home/.local/` appearance files | Matching paths under `~/.local/` |
+   | `home/.gtkrc-2.0` | `~/.gtkrc-2.0` |
+
+   Bundled theme assets are extracted to their recorded home-relative locations, and included symlinks are recreated. The cloned `dotfiles` folder remains the restore kit. Private data and the prayer setup require their separate backups/restoration step below.
 
    Conflicting destination files are moved to a uniquely named private `.dotfiles-conflicts` folder. Identical files are skipped. Existing parent symlinks require explicit review so writes cannot escape the intended home. Home paths are materialized from `@@HOME@@` templates. Theme assets are stored in checksum-verified compressed parts; their full archive and all member paths are checked before restoration. Do not manually extract parts as independent archives.
 
