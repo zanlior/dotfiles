@@ -16,3 +16,10 @@ secrets/
 **/node_modules/
 **/*.before-*
 **/.git/
+
+# Shell histories and generated session/cache files remain private.
+**/.zsh_history
+**/.zsh_sessions/
+**/.zcompdump*
+**/.zsh-update
+**/p10k-instant-prompt-*

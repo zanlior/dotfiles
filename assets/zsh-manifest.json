@@ -1,0 +1,218 @@
+{
+  "format": "tar.xz",
+  "sha256": "618dc56581f0411f5571b2dff8bc183da088721954220f6bd4afe9bd0c1f0dea",
+  "member_count": 1250,
+  "unpacked_bytes": 8381532,
+  "parts": [
+    {
+      "name": "zsh-assets.part0000",
+      "sha256": "c2db178a8cbeebdafc7607d5af49d14b7c7cfb51e49a41c0f707b960c156b573",
+      "bytes": 49152
+    },
+    {
+      "name": "zsh-assets.part0001",
+      "sha256": "bf41b290980f99f9f8f2aca43ed8d7007512cabe1e7d234c592530be26d4b18b",
+      "bytes": 49152
+    },
+    {
+      "name": "zsh-assets.part0002",
+      "sha256": "378b06ccee753e60a6eb6ac80f4a40db9dfbf3a8ae54abbe5a2ed05f79c04fb3",
+      "bytes": 49152
+    },
+    {
+      "name": "zsh-assets.part0003",
+      "sha256": "4eb28c23328078daa473be40341b601b21cd828b2dc39538db2f3d049200fa2c",
+      "bytes": 49152
+    },
+    {
+      "name": "zsh-assets.part0004",
+      "sha256": "940ec4921b8ce724266e632e0bf314d8713c65e9e505e70436ccac478cb99099",
+      "bytes": 49152
+    },
+    {
+      "name": "zsh-assets.part0005",
+      "sha256": "92c43a41ad8188d93cdf312403068e72c2db6b257d99477b2de7cdce9bebadc9",
+      "bytes": 49152
+    },
+    {
+      "name": "zsh-assets.part0006",
+      "sha256": "96b73e9392c45e48bfc19d27a3ddd7ae50fdb274467dc272fa7af93642353d72",
+      "bytes": 49152
+    },
+    {
+      "name": "zsh-assets.part0007",
+      "sha256": "c942b2d67673a195601cf07cf8bcc7355ed2facc5153bbff7e0341d07307f44a",
+      "bytes": 49152
+    },
+    {
+      "name": "zsh-assets.part0008",
+      "sha256": "8c68baabe1ed64fab7e0235f4c1a021144f6bb43e5d7361ab413f9a2a8be08f4",
+      "bytes": 49152
+    },
+    {
+      "name": "zsh-assets.part0009",
+      "sha256": "8ca0998c8c01f4ce281fef14403d4299a614fad95513a1935f352071b58f7e0a",
+      "bytes": 49152
+    },
+    {
+      "name": "zsh-assets.part0010",
+      "sha256": "665a6c619e6cf9f9f5d8b1b1e7ce3a5fdc85628ec43ab544fac007579a3f4b1a",
+      "bytes": 49152
+    },
+    {
+      "name": "zsh-assets.part0011",
+      "sha256": "b457ebcb927afafea10df0241a8befc1216f3a4966c9c5f7e5df54ee9aebfcfe",
+      "bytes": 49152
+    },
+    {
+      "name": "zsh-assets.part0012",
+      "sha256": "9c9435410a700639823b63bd7304dd24eac729af9d1b01ed5daea48b85ef247d",
+      "bytes": 49152
+    },
+    {
+      "name": "zsh-assets.part0013",
+      "sha256": "2b1e75faa8e058f7e8f8cf2ea9cc3a191540346f097308fc668e65d3f30cb030",
+      "bytes": 49152
+    },
+    {
+      "name": "zsh-assets.part0014",
+      "sha256": "d123531d1c0a5003940b42b6e65038214726743ab86a53d726cd68b92e1ecd12",
+      "bytes": 49152
+    },
+    {
+      "name": "zsh-assets.part0015",
+      "sha256": "debcaf3f40a2bd5a1cde6bb2d789d6f2980c3f3f1092dada8123a76408df1a89",
+      "bytes": 49152
+    },
+    {
+      "name": "zsh-assets.part0016",
+      "sha256": "a8762588710a291d0a434ec65982b3503b40c25261284b16abf017ab2abdebd4",
+      "bytes": 49152
+    },
+    {
+      "name": "zsh-assets.part0017",
+      "sha256": "f49d39b12d566870d583ffe28a050b889021d58f7eb1c555e2df5e536c3b6af9",
+      "bytes": 49152
+    },
+    {
+      "name": "zsh-assets.part0018",
+      "sha256": "9c0d463da45dd4d29d485cd4085af5b47a836cd0b7d41f85aff452dc92537981",
+      "bytes": 49152
+    },
+    {
+      "name": "zsh-assets.part0019",
+      "sha256": "d010022a86613f2203cdc77f945c23784d1640e2fff1b62b431ffd62fe37461a",
+      "bytes": 49152
+    },
+    {
+      "name": "zsh-assets.part0020",
+      "sha256": "70b89ec0a1a691dac43d24cf52b3a70d5559d93d6be422f65fa699f47faed7f0",
+      "bytes": 49152
+    },
+    {
+      "name": "zsh-assets.part0021",
+      "sha256": "3c5a9bec34cd8d1289034b27c1d7396ef8c1905644d76d9c501fceba3726b061",
+      "bytes": 49152
+    },
+    {
+      "name": "zsh-assets.part0022",
+      "sha256": "449dd118a08027ddd4e14feb0877fd7ac203d0c91c561251c6cec2099d20940d",
+      "bytes": 49152
+    },
+    {
+      "name": "zsh-assets.part0023",
+      "sha256": "46a3e635ff06d14aab8b60028f093e9d0485b83c070aa7f97083503200fb091c",
+      "bytes": 49152
+    },
+    {
+      "name": "zsh-assets.part0024",
+      "sha256": "eda11968e69529b6c9d320ad716bd8be4c532439ed2901dd9bf936052636b982",
+      "bytes": 49152
+    },
+    {
+      "name": "zsh-assets.part0025",
+      "sha256": "81ce14193ba7a2f892c581aef4198a70e97a620e5d1cc28c319ba537ea0378cc",
+      "bytes": 49152
+    },
+    {
+      "name": "zsh-assets.part0026",
+      "sha256": "7d2baa6ddec171c109db3fba77f216a01c5107200349197b7b517cda2d9e5053",
+      "bytes": 49152
+    },
+    {
+      "name": "zsh-assets.part0027",
+      "sha256": "4969c279a619a91203f1a3c423553ee56d498f369fe4fe4e4b5c326403597e8e",
+      "bytes": 49152
+    },
+    {
+      "name": "zsh-assets.part0028",
+      "sha256": "022205168f8b454a1028cbbbcfbe42c60c6c0d245ccaa82aba028ba7aa781441",
+      "bytes": 49152
+    },
+    {
+      "name": "zsh-assets.part0029",
+      "sha256": "d8dd029347d1a93b5ac98131c609d7e3770abd4b2bed5ee09b0bd6fcfed8a06b",
+      "bytes": 49152
+    },
+    {
+      "name": "zsh-assets.part0030",
+      "sha256": "14cb4f1dd5d8c2685d101daa5d119ab5b4e2b1a97c48c8a9d9d8ac914ade0c6b",
+      "bytes": 49152
+    },
+    {
+      "name": "zsh-assets.part0031",
+      "sha256": "f7163a8b3509245ef84ada55aa295ea743d342b38b2d0bacdd84642394cedeed",
+      "bytes": 49152
+    },
+    {
+      "name": "zsh-assets.part0032",
+      "sha256": "5f3f057109178d6d12871b671eb9b0322d71390ef0d29acee065c2d11d18fdae",
+      "bytes": 49152
+    },
+    {
+      "name": "zsh-assets.part0033",
+      "sha256": "0a6a5c4af90dbbdba9aaafb3e131ec0c61846b403d2dc1544b2b2de7d8229de8",
+      "bytes": 49152
+    },
+    {
+      "name": "zsh-assets.part0034",
+      "sha256": "b50c40038ace3048add77acbafe1c7acd65a7fa89425f5cd4ef235e95680c14a",
+      "bytes": 49152
+    },
+    {
+      "name": "zsh-assets.part0035",
+      "sha256": "b8926c958c5bf464ac5b8b6138b128f67ca9b1233b833e7e927f3d7f353ffd09",
+      "bytes": 49152
+    },
+    {
+      "name": "zsh-assets.part0036",
+      "sha256": "e7466fc97f5ce5951b91d6c113b31f90c3f73d3f364e70a427a6e473e5f4f7d7",
+      "bytes": 49152
+    },
+    {
+      "name": "zsh-assets.part0037",
+      "sha256": "8d7c55d9dd445528e45e8cc57a2c8ac1c43969b8340d53af907d878eff26426a",
+      "bytes": 49152
+    },
+    {
+      "name": "zsh-assets.part0038",
+      "sha256": "c602b39ed705e51227e95a117dbb2aba4e19010ea197c9c1e9994e9637d620a1",
+      "bytes": 49152
+    },
+    {
+      "name": "zsh-assets.part0039",
+      "sha256": "345e9ff36f5ddba26a26a85cb63580f6ba9cfc51cc6b18310b5d240892a1ec11",
+      "bytes": 49152
+    },
+    {
+      "name": "zsh-assets.part0040",
+      "sha256": "764ed6958ddfd7fbe37d0c353d22f303a6c0f4dcc9d134483256e12ad64560d2",
+      "bytes": 49152
+    },
+    {
+      "name": "zsh-assets.part0041",
+      "sha256": "87070fdda62e99aecfb59c2f8a0dd7f2bef019b13c24cf59bfaa35aa771e324f",
+      "bytes": 46012
+    }
+  ]
+}

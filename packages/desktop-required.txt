@@ -27,3 +27,5 @@ adwaita-fonts
 noto-fonts
 noto-fonts-emoji
 ttf-jetbrains-mono-nerd
+zsh
+git

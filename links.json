@@ -4490,5 +4490,41 @@
   {
     "path": ".local/share/themes/Colloid-Dark-xhdpi/xfwm4/title-5-inactive.xpm",
     "target": "@@HOME@@/.local/share/themes/Colloid-Dark-xhdpi/xfwm4/title-inactive.xpm"
+  },
+  {
+    "path": ".oh-my-zsh/plugins/per-directory-history/per-directory-history.plugin.zsh",
+    "target": "@@HOME@@/.oh-my-zsh/plugins/per-directory-history/per-directory-history.zsh"
+  },
+  {
+    "path": ".oh-my-zsh/plugins/zsh-syntax-highlighting/highlighters/brackets/README.md",
+    "target": "@@HOME@@/.oh-my-zsh/plugins/zsh-syntax-highlighting/docs/highlighters/brackets.md"
+  },
+  {
+    "path": ".oh-my-zsh/plugins/zsh-syntax-highlighting/highlighters/cursor/README.md",
+    "target": "@@HOME@@/.oh-my-zsh/plugins/zsh-syntax-highlighting/docs/highlighters/cursor.md"
+  },
+  {
+    "path": ".oh-my-zsh/plugins/zsh-syntax-highlighting/highlighters/line/README.md",
+    "target": "@@HOME@@/.oh-my-zsh/plugins/zsh-syntax-highlighting/docs/highlighters/line.md"
+  },
+  {
+    "path": ".oh-my-zsh/plugins/zsh-syntax-highlighting/highlighters/main/README.md",
+    "target": "@@HOME@@/.oh-my-zsh/plugins/zsh-syntax-highlighting/docs/highlighters/main.md"
+  },
+  {
+    "path": ".oh-my-zsh/plugins/zsh-syntax-highlighting/highlighters/pattern/README.md",
+    "target": "@@HOME@@/.oh-my-zsh/plugins/zsh-syntax-highlighting/docs/highlighters/pattern.md"
+  },
+  {
+    "path": ".oh-my-zsh/plugins/zsh-syntax-highlighting/highlighters/regexp/README.md",
+    "target": "@@HOME@@/.oh-my-zsh/plugins/zsh-syntax-highlighting/docs/highlighters/regexp.md"
+  },
+  {
+    "path": ".oh-my-zsh/plugins/zsh-syntax-highlighting/highlighters/root/README.md",
+    "target": "@@HOME@@/.oh-my-zsh/plugins/zsh-syntax-highlighting/docs/highlighters/root.md"
+  },
+  {
+    "path": ".oh-my-zsh/themes/macovsky-ruby.zsh-theme",
+    "target": "@@HOME@@/.oh-my-zsh/themes/macovsky.zsh-theme"
   }
 ]

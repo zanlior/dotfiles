@@ -5,8 +5,8 @@ import argparse, datetime, hashlib, io, json, os, pathlib, shutil, tarfile
 ROOT=pathlib.Path(__file__).resolve().parents[1]
 TEXT={'.qml','.js','.py','.json','.conf','.lua','.sh','.svg','.css','.rasi','.ini','.md','.theme','.toml','.scss','.txt','.rc','.xml','.xpm','.desktop'}
 def digest(data):return hashlib.sha256(data).hexdigest()
-def archive():
-    m=json.loads((ROOT/'assets/manifest.json').read_text());parts=[]
+def archive(manifest_name='manifest.json'):
+    m=json.loads((ROOT/'assets'/manifest_name).read_text());parts=[]
     for part in m['parts']:
         if pathlib.Path(part['name']).name!=part['name']:raise ValueError('Unsafe archive part name')
         data=(ROOT/'assets'/part['name']).read_bytes()
@@ -36,14 +36,15 @@ def main():
     for p in sorted((ROOT/'home').rglob('*')):
         if p.is_symlink():raise ValueError('Unexpected repository symlink')
         if p.is_file():files.append((relative(str(p.relative_to(ROOT))),p.read_bytes(),p.stat().st_mode&0o777))
-    tf,meta=archive()
-    members=tf.getmembers()
-    if len(members)!=meta['member_count'] or sum(m.size for m in members)!=meta['unpacked_bytes']:raise ValueError('Asset inventory mismatch')
-    for m in members:
-        rel=relative(m.name)
-        if not m.isfile():raise ValueError('Unexpected non-file archive member')
-        files.append((rel,tf.extractfile(m).read(),m.mode))
-    tf.close()
+    for manifest_name in ('manifest.json', 'zsh-manifest.json'):
+        tf,meta=archive(manifest_name)
+        members=tf.getmembers()
+        if len(members)!=meta['member_count'] or sum(m.size for m in members)!=meta['unpacked_bytes']:raise ValueError('Asset inventory mismatch')
+        for m in members:
+            rel=relative(m.name)
+            if not m.isfile():raise ValueError('Unexpected non-file archive member')
+            files.append((rel,tf.extractfile(m).read(),m.mode))
+        tf.close()
     if len({str(p) for p,_,_ in files})!=len(files):raise ValueError('Duplicate restore paths')
     links=json.loads((ROOT/'links.json').read_text())
     for rel,_,_ in files:safe_parents(home/rel,home)
@@ -64,7 +65,7 @@ def main():
             shutil.move(str(path),str(saved))
     for rel,data,mode in files:
         dest=home/rel
-        if dest.suffix in TEXT or dest.name in {'gsettings','config','.gtkrc-2.0','qmldir'}:
+        if dest.suffix in TEXT or dest.name in {'gsettings','config','.gtkrc-2.0','qmldir','.zshrc','.zprofile','.p10k.zsh'}:
             try:data=data.decode().replace('@@HOME@@',str(home)).encode()
             except UnicodeDecodeError:raise ValueError('Invalid text encoding')
         if dest.is_file() and not dest.is_symlink() and digest(dest.read_bytes())==digest(data):continue
@@ -76,7 +77,7 @@ def main():
         if dest.is_symlink() and os.readlink(dest)==target:continue
         preserve(dest,rel);dest.parent.mkdir(parents=True,exist_ok=True);dest.symlink_to(target);changed+=1
     print('Changed:',changed,'Conflicts preserved under:',backup)
-    print('No services enabled. Prayer API/location and other private state are restored separately.')
+    print('No services enabled or login shell changed. Prayer API/location and private state are restored separately. Open a new Zsh session to check the restored prompt.')
 if __name__=='__main__':
     try:main()
     except (OSError,ValueError,KeyError,tarfile.TarError) as e:raise SystemExit('FAILED: '+str(e))

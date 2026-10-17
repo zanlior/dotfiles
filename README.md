@@ -1,6 +1,6 @@
 # CachyOS desktop reinstall snapshot
 
-Sanitized Hyprland Lua, custom Island/Quickshell shell, nwg-look/GTK appearance, themes, icons, Kitty, Quickshell notifications, Neovim configuration and the ZuriTheme VSCodium extension. Relevant `.local` appearance files are included. These are desktop sources/settings, not a complete personal-data or recovery backup.
+Sanitized Hyprland Lua, custom Island/Quickshell shell, nwg-look/GTK appearance, themes, icons, Kitty, Quickshell notifications, Neovim configuration and the ZuriTheme VSCodium extension. Relevant `.local` appearance files and the current Zsh/Oh My Zsh/Powerlevel10k setup are included. These are desktop sources/settings, not a complete personal-data or recovery backup.
 
 The original Hyprland launch path `.config/hypr/quickshell` and the separate `.config/quickshell/island` profile differed; both runtime snapshots are preserved. The second profile is stored as actual source files, so it no longer depends on a symlink to a personal development worktree. Project histories, backups, arbitrary project docs, profiles, databases, credentials, clipboard history, browser/media activity, prayer schedules and runtime state are excluded.
 
@@ -62,6 +62,20 @@ API credentials and private prayer location/audio settings are absent. The praye
    ```
 
 6. Compare `review/final-base-coverage-check.txt` with installer-provided software. `review/final-repository-packages.txt` lists reviewed supplemental applications; `scripts/restore-apps.py` checks availability before any optional installation. Foreign packages and uncertain kernel/NVIDIA/boot/system packages are separate manual review lists. Build foreign recipes as a normal user only after reviewing their source and PKGBUILD; they are not assumed to be AUR packages.
+
+## Your Zsh setup
+
+The normal desktop restore command also restores `.zshrc`, `.p10k.zsh`, `.zprofile`, Oh My Zsh and Powerlevel10k to their original home-relative paths. Their source snapshots are bundled, so the restore does not fetch changing upstream versions or run the Oh My Zsh installer. The `git` plugin and your aliases are preserved. The system Zsh package, Git and your Kitty Nerd Font are in the prerequisite list.
+
+Oh My Zsh is pinned to `4d4cfc287e9d887b81242c0e431b5f49f9cec5c1`; Powerlevel10k is pinned to `9253fb1c5034410c43a0c681ff8294181c54016c`. The existing Linux x86-64 gitstatus helper is bundled with its checksum. Git metadata is omitted, so framework/theme Git-based updates need a separately reviewed checkout later. Two unused plugin demo GIFs were omitted. One example token in upstream documentation was redacted; active runtime settings were preserved, with your absolute home path templated for the new username.
+
+Your `.zprofile` starts `uwsm start hyprland.desktop` on the configured TTYs when its readiness checks pass. Review this if the new install uses a display manager or another session arrangement. The restore does not change your account's login shell. Kitty already selects `zsh`; to make it your login shell too, run this **on the new installation**, then log out and back in:
+
+```bash
+chsh -s /usr/bin/zsh
+```
+
+Open a new terminal to verify the prompt, colors, icons and Git status. Shell history, completion dumps, instant-prompt caches and credentials are excluded from GitHub. Aliases are preserved exactly, including aliases for `dust` and `nitch`, which were not found on the current command PATH; these commands need separate review if you want to use them. Aliases for `paru` require the separately reviewed foreign-package helper.
 
 ## Important limits
 
