@@ -1,6 +1,6 @@
 # CachyOS desktop reinstall snapshot
 
-Sanitized Hyprland Lua, custom Island/Quickshell shell, nwg-look/GTK appearance, themes, icons, Kitty, notification configuration, Neovim configuration and the ZuriTheme VSCodium extension. Relevant `.local` appearance files are included. These are desktop sources/settings, not a complete personal-data or recovery backup.
+Sanitized Hyprland Lua, custom Island/Quickshell shell, nwg-look/GTK appearance, themes, icons, Kitty, Quickshell notifications, Neovim configuration and the ZuriTheme VSCodium extension. Relevant `.local` appearance files are included. These are desktop sources/settings, not a complete personal-data or recovery backup.
 
 The original Hyprland launch path `.config/hypr/quickshell` and the separate `.config/quickshell/island` profile differed; both runtime snapshots are preserved. The second profile is stored as actual source files, so it no longer depends on a symlink to a personal development worktree. Project histories, backups, arbitrary project docs, profiles, databases, credentials, clipboard history, browser/media activity, prayer schedules and runtime state are excluded.
 
@@ -64,6 +64,8 @@ API credentials and private prayer location/audio settings are absent. The praye
 6. Compare `review/final-base-coverage-check.txt` with installer-provided software. `review/final-repository-packages.txt` lists reviewed supplemental applications; `scripts/restore-apps.py` checks availability before any optional installation. Foreign packages and uncertain kernel/NVIDIA/boot/system packages are separate manual review lists. Build foreign recipes as a normal user only after reviewing their source and PKGBUILD; they are not assumed to be AUR packages.
 
 ## Important limits
+
+- Quickshell provides the notification server, popups and notification history. SwayNC is excluded from both reinstall lists. Its old configuration remains in the snapshot for reference but is not autostarted by the included Hyprland configuration. On the new installation, check that another notification daemon is not started by the installer or session.
 
 - Python is a runtime requirement for this custom shell and retained apps. Optional Python development tools and Docker were excluded, not required runtime dependencies.
 - `cliphist`, `matugen` and `python-libsass` are explicit prerequisites in place of old machine-specific binaries. A future version may change command-line/API compatibility. Vendored `_sass`/mprisence binaries were not uploaded. Optional browser media bridging requires a separately reviewed trusted mprisence installation; ordinary MPRIS media support remains in the source.

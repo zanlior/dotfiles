@@ -48,7 +48,7 @@ hl.bind(mainMod .. " + SHIFT + W", hl.dsp.exec_cmd("brave-origin-beta"))
 hl.bind(mainMod .. " + SHIFT + T", hl.dsp.exec_cmd("quickshell -p @@HOME@@/.config/hypr/quickshell ipc call island toggle wallpapers"))
 hl.bind(mainMod .. " + T",         hl.dsp.exec_cmd("quickshell -p @@HOME@@/.config/hypr/quickshell ipc call island toggle themes"))
 
--- ── Notification Center (swaync) ──────────────────────────────────────────────
+-- ── Notification Center (Quickshell) ──────────────────────────────────────────────
 hl.bind(mainMod .. " + A",                hl.dsp.exec_cmd("quickshell -p @@HOME@@/.config/hypr/quickshell ipc call island toggle control"))
 hl.bind(mainMod .. " + CTRL + SHIFT + A", hl.dsp.exec_cmd("quickshell -p @@HOME@@/.config/hypr/quickshell ipc call island refresh"))
 

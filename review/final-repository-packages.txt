@@ -31,7 +31,6 @@ proton-pass
 quickshell
 satty
 steam
-swaync
 thunar
 tree
 ttf-jetbrains-mono-nerd

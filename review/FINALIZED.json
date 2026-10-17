@@ -1,7 +1,7 @@
 {
   "user_review_complete": true,
   "list_sha256": {
-    "final-repository-packages.txt": "30b13d49f00ccdb59e25f28270b75be5ce850092a8e3f165c013d7a34b6e2290",
+    "final-repository-packages.txt": "fecc913bb7c88eedced078d4afda30a671ecdb86d43f3f928f41a6ef7b7cb54a",
     "final-foreign-review.txt": "bfedc61a728a6247cbffd81c7343938053ef179b76a81313c57a8c5f7f63b415",
     "final-foreign-dependency-review.txt": "641d49bf6ed8c1ebf5e2068d5b94eeffd925a18da077d8753180601c4bc7064b",
     "final-base-coverage-check.txt": "70c87f957c275e9ea688cec082d287c472961e64b6f0954b34c4a48fdcd4c2a4",
@@ -21,8 +21,16 @@
     "python-packaging",
     "python-pip",
     "rofi",
+    "swaync",
     "uv",
     "waybar"
   ],
-  "dependencies_resolved_by": "pacman on new installation; excluded dependency may remain required"
+  "dependencies_resolved_by": "pacman on new installation; excluded dependency may remain required",
+  "review_revisions": [
+    {
+      "package": "swaync",
+      "selection": "Exclude from reinstall",
+      "reason": "Custom Quickshell owns NotificationServer and control center; retained Hyprland autostart and bindings do not require swaync. Original inventory/configuration preserved."
+    }
+  ]
 }
