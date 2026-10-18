@@ -19,3 +19,5 @@ Completed on 2026-10-18:
 - New/changed publication text passed recognized credential-pattern scanning. All inherited files come from the previously sanitized public snapshot; private prayer settings, wallpapers, browser profiles, Codex and personal files remain excluded.
 
 Run the offline checks from this checkout using `PYTHONDONTWRITEBYTECODE=1 python3 -m unittest discover -s tests -v`. Verify all published content with `sha256sum -c SHA256SUMS`. A checksum detects content changes, not whether a source is trustworthy.
+
+Minimal-install follow-up: the recommended base is now Fedora Everything 44 with Minimal Install. MINIMAL.md documents console/network bootstrap, manual UWSM launch, required service checks and a recovery TTY, without a GNOME/KDE group or display manager. NetworkManager's text UI, polkit and dbus-broker are explicit prerequisites. No such service/startup/installation command was executed here. The original 15 offline checks remain applicable; live minimal-Fedora provisioning and graphical tests remain pending.

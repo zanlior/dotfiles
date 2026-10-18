@@ -1,4 +1,4 @@
-# Fedora uses the display manager's Hyprland (UWSM) session by default.
+# Fedora minimal: start Hyprland manually from a TTY until testing passes.
 # Opt into the original TTY workflow only after testing login/recovery.
 if [[ -o login && "${DOTFILES_HYPR_TTY_AUTOSTART:-0}" == 1 ]]; then
     case $(tty) in

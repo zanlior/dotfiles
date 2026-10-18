@@ -28,6 +28,9 @@ pulseaudio-utils
 wireplumber
 libnotify
 NetworkManager
+NetworkManager-tui
+polkit
+dbus-broker
 bluez
 xdg-utils
 xdg-desktop-portal-hyprland

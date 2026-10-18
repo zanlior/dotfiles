@@ -2,7 +2,7 @@
 
 Fedora adaptations of your sanitized rice, Oh My Zsh/Powerlevel10k, NvChad and VSCodium ZuriTheme synchronization. The CachyOS snapshot remains on [`main`](https://github.com/zanlior/dotfiles/tree/main).
 
-**Target: conventional Fedora 44 x86_64. Graphical restore not yet tested on Fedora.** Version checks, package-name mappings and source review are provided; successful scripts alone do not prove the whole desktop works.
+**Selected setup: Fedora Everything 44 x86_64 → Minimal Install → Hyprland + Quickshell. No GNOME/KDE or graphical login manager required. Graphical restore not yet tested on Fedora.** Version checks, package-name mappings and source review are provided; successful scripts alone do not prove the whole desktop works.
 
 ```bash
 git clone --branch fedora --single-branch https://github.com/zanlior/dotfiles.git "$HOME/dotfiles-fedora"
@@ -10,7 +10,7 @@ cd "$HOME/dotfiles-fedora"
 sha256sum -c SHA256SUMS
 ```
 
-Follow **[FEDORA.md](FEDORA.md)** in order: base system/NVIDIA readiness, community-source review, fonts/cursor, package preview, restore preview, private state and graphical checks. Do not run the apply commands on your present CachyOS installation. Fedora install/apply entrypoints reject the wrong OS.
+Start with **[MINIMAL.md](MINIMAL.md)** for the installer, console/network bootstrap and session startup. Then follow **[FEDORA.md](FEDORA.md)** in order: base system/NVIDIA readiness, community-source review, fonts/cursor, package preview, restore preview, private state and graphical checks. Do not run the apply commands on your present CachyOS installation. Fedora install/apply entrypoints reject the wrong OS.
 
 After prerequisites pass on the NEW Fedora system:
 
