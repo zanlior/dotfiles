@@ -16,24 +16,12 @@ source $ZSH/oh-my-zsh.sh
 
 # Aliases
 
-# Pacman
-alias i='sudo pacman -S'
-alias r='sudo pacman -R'
-alias rns='sudo pacman -Rns'
-alias u='sudo pacman -Sy'
-alias U='sudo pacman -Syu'
-alias s='sudo pacman -Ss'
-alias icc='sudo pacman -Scc'
-
-#Paru
-alias yay='paru'
-alias pi='paru -S' 
-alias ps='paru -Ss'
-alias pr='paru -R'
-alias pu=' paru -Sy'
-alias pU='paru -Syu'
-alias prns='paru -Rns'
-alias pcc='paru -Scc'
+# Fedora package aliases. No Arch package manager or AUR helper on this branch.
+alias i='sudo dnf install'
+alias r='sudo dnf remove'
+alias u='sudo dnf upgrade --refresh'
+alias U='sudo dnf upgrade --refresh'
+alias icc='sudo dnf clean packages'
 
 #System 
 alias s='sudo'
@@ -47,13 +35,13 @@ alias sleep='systemctl suspend'
 
 #Utility 
 alias v='nvim'
-alias ls='exa -a'
+alias ls='eza -a'
 alias du='dust'
 alias gparted=' sudo gparted & disown'
 
 #Config
 alias ezsh='nvim ~/.zshrc'
-alias ehypr='nvim  ~/.config/hypr/hyprland.conf'
+alias ehypr='nvim  ~/.config/hypr/hyprland.lua'
 alias ekitty='nvim ~/.config/kitty/kitty.conf'
 
 #Misc

@@ -1,0 +1,22 @@
+# Supplemental apps mapped to Fedora/RPM Fusion names; no repos auto-enabled.
+btrfs-assistant
+ddcutil
+easyeffects
+eza
+gimp
+gparted
+gradle
+hplip
+libinput-utils
+lutris
+mpv
+nautilus
+neovim
+nodejs-npm
+obs-studio
+obs-studio-plugin-vkcapture
+prismlauncher
+satty
+steam
+Thunar
+tree

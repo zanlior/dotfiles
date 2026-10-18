@@ -29,6 +29,13 @@ def main():
     ap.add_argument('--apply',action='store_true');ap.add_argument('--dry-run',action='store_true')
     args=ap.parse_args()
     if args.apply and args.dry_run:raise ValueError('Choose one mode')
+    if args.apply:
+        from fedora_common import require_fedora
+        require_fedora()
+        import importlib.util
+        spec=importlib.util.spec_from_file_location('fedora_preflight',ROOT/'scripts/check-fedora.py')
+        probe=importlib.util.module_from_spec(spec);spec.loader.exec_module(probe)
+        probe.check()
     if args.home.is_symlink():raise ValueError('Home root symlink refused')
     home=args.home.resolve(strict=True)
     if home==pathlib.Path('/') or home.stat().st_uid!=os.getuid():raise ValueError('Run as destination user')

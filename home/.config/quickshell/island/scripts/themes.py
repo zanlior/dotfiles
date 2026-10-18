@@ -15,7 +15,8 @@ def helper(name):
 
 def material_palette(wallpaper):
     if not wallpaper or not pathlib.Path(wallpaper).is_file():raise ValueError('Set a wallpaper before choosing Material You')
-    raw=json.loads(command([helper('matugen'),'--dry-run','--old-json-output','--json','hex','--mode','dark','--source-color-index','0','image',str(wallpaper)]))
+    from matugen_compat import palette
+    raw=palette(helper('matugen'), ['image', str(wallpaper)])
     colors=raw['colors']
     def c(name):
         value=colors[name]['dark']

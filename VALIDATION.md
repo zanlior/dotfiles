@@ -1,22 +1,21 @@
-# Validation status
+# Fedora branch validation
 
-Python source syntax, shell syntax, finalized application-list hashes, asset-part and full-archive hashes, archive member paths, all declared theme symlink targets, recognized credential patterns, and exact private prayer endpoint/location values were checked. No findings remained in the snapshot, including compressed theme/design assets.
+Target: conventional Fedora 44 x86_64. Port prepared from CachyOS snapshot `d2f7891c7616e2155cb8496ff41fb1899ce34b63` without modifying the running desktop or CachyOS branch.
 
-{
-  "text_files": 13088,
-  "python_files": 28,
-  "archive_members": 21874,
-  "links": 1123
-}
+Original theme/archive/sanitization evidence remains in Git history. Original inventories and application decisions remain present. Fedora changes cover DNF package mappings, explicit application coverage, OS/readiness/version guards, both Matugen palette adapters, wallpaper daemon, display-manager startup defaults, portable Zsh aliases and monitor/graphics settings. Optional old compiled hyprbars bindings are disabled pending a compatible rebuild. Fonts/cursor and non-native apps are explicitly reported rather than silently assumed installed.
 
-No software installation, application/desktop restoration, live graphical-session test, or private backup was executed. A pattern scan cannot prove absence of every possible secret format; the snapshot is additionally restricted to selected desktop sources/assets and appearance settings.
+Validation is performed offline with mocked DNF/RPM commands, source syntax checks and checksum/archive/path checks. No installation or restoration is run by the tests. The current CachyOS Matugen binary can be probed with an isolated empty template config; that does not establish Fedora package compatibility.
 
-The dependency installer additionally checks helper command availability, generates an isolated dry-run Matugen JSON palette, and compiles an in-memory SCSS sample after installation. Its success and failure paths were checked with mocked commands, without installing packages. Live clipboard/Material You integration still requires a restored graphical session.
+**Not yet executed:** Fedora DNF dependency resolution, package installation, live Qt/QML launch, driver build, editor bootstrap, private-data restoration, graphical/session tests or recovery rehearsal. Community build listings are evidence that builds exist, not proof the combined desktop dependencies solve or that every interface works. Follow FEDORA.md and keep a working GNOME/KDE recovery session until real tests pass.
 
-The existing local Matugen 4.2.0 helper also passed the isolated dry-run JSON palette probe using a temporary config with no templates and a temporary cache. No current theme or wallpaper was changed. Package-manager installation and the restored graphical session remain untested.
+Completed on 2026-10-18:
 
-Zsh update: startup files passed `zsh -n`; `.zprofile` and `.p10k.zsh` match the current originals byte for byte, and `.zshrc` matches after substituting the home-path template. Both asset archives passed full/part hashes, member counts, size/path/type checks, duplicate-path checks and symlink coverage checks. Oh My Zsh/Powerlevel10k source commits and helper hashes are recorded in `inventory/zsh-snapshot.json`. Shell source text and startup files were scanned for recognized credentials; an upstream example token was redacted. Public upstream emoji dictionaries contain country names and were reviewed as public data, not user settings. Two unused plugin demo GIFs were omitted. No shell/session restore, login-shell change, package installation or prompt runtime test was performed.
+- 15 offline unit checks passed: package availability/version failures, no automatic downgrade, installed-package reruns, readiness/OS guards, list hashes, complete retained-application coverage, Matugen 3/4 shapes and malformed palette rejection.
+- Syntax checks passed for 34 Python files, 111 Lua files, 6 shell/startup files and 3 ZuriTheme JavaScript modules.
+- Both asset archives passed every part/full hash, size/member count, file-type and path check: 23,124 archive members. The retained assets and editor extension files were not repackaged.
+- The restore preview planned 23,498 files and 1,132 symlinks against an empty temporary home and left it empty. The existing home symlink was correctly refused by a separate preview.
+- The Fedora installer preview correctly refused to run on the current CachyOS host. No DNF/sudo/install or restore apply action ran.
+- The existing Matugen 4.2 helper passed the new isolated palette adapter with an empty template configuration; this is a CachyOS-only helper probe, not a Fedora graphical test.
+- New/changed publication text passed recognized credential-pattern scanning. All inherited files come from the previously sanitized public snapshot; private prayer settings, wallpapers, browser profiles, Codex and personal files remain excluded.
 
-Neovim update: all 13 non-Git configuration files match the current source byte for byte, and all 23 custom NvChad/Base46 additions match their current plugin paths. Their credential/private-setting scans passed. The override planner verified source hashes and installed plugin revisions without writing; unsafe paths, symlink parents, missing configuration and mismatched plugin revisions were rejected in isolated checks. Lua sources passed LuaJIT bytecode syntax compilation to temporary files. No editor startup, plugin download, restoration or installation was executed.
-
-VSCodium sync update: the previously omitted extension entrypoint and both JavaScript modules are now included, matching their current source byte for byte. All three passed Node syntax checks and recognized-credential/private-setting scans. An isolated simulated-editor test passed all 21 palette mappings, dynamic Material You colors, initial synchronization, the disable setting and an atomic state-file-replacement watcher event. The restored setting explicitly enables sync. No VSCodium process, live settings or desktop configuration was changed; a live restored-editor check remains pending.
+Run the offline checks from this checkout using `PYTHONDONTWRITEBYTECODE=1 python3 -m unittest discover -s tests -v`. Verify all published content with `sha256sum -c SHA256SUMS`. A checksum detects content changes, not whether a source is trustworthy.

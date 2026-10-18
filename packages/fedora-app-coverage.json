@@ -1,0 +1,301 @@
+{
+  "target": "Fedora 44 x86_64",
+  "original_selections_preserved": true,
+  "items": [
+    {
+      "original": "awww",
+      "route": "fedora-desktop",
+      "target": "swww"
+    },
+    {
+      "original": "brave-origin-bin",
+      "route": "manual-source-review",
+      "target": "packages/fedora-manual-apps.md"
+    },
+    {
+      "original": "btrfs-assistant",
+      "route": "fedora-apps",
+      "target": "btrfs-assistant"
+    },
+    {
+      "original": "chatgpt-desktop-bin",
+      "route": "manual-source-review",
+      "target": "packages/fedora-manual-apps.md"
+    },
+    {
+      "original": "ddcutil",
+      "route": "fedora-apps",
+      "target": "ddcutil"
+    },
+    {
+      "original": "easyeffects",
+      "route": "fedora-apps",
+      "target": "easyeffects"
+    },
+    {
+      "original": "eza",
+      "route": "fedora-apps",
+      "target": "eza"
+    },
+    {
+      "original": "gimp",
+      "route": "fedora-apps",
+      "target": "gimp"
+    },
+    {
+      "original": "gparted",
+      "route": "fedora-apps",
+      "target": "gparted"
+    },
+    {
+      "original": "gradle",
+      "route": "fedora-apps",
+      "target": "gradle"
+    },
+    {
+      "original": "hplip",
+      "route": "fedora-apps",
+      "target": "hplip"
+    },
+    {
+      "original": "hyprlock",
+      "route": "fedora-desktop",
+      "target": "hyprlock"
+    },
+    {
+      "original": "hyprpolkitagent",
+      "route": "fedora-desktop",
+      "target": "hyprpolkitagent"
+    },
+    {
+      "original": "hyprsunset",
+      "route": "fedora-desktop",
+      "target": "hyprsunset"
+    },
+    {
+      "original": "intellij-idea-community-edition",
+      "route": "manual-source-review",
+      "target": "packages/fedora-manual-apps.md"
+    },
+    {
+      "original": "libinput-tools",
+      "route": "fedora-apps",
+      "target": "libinput-utils"
+    },
+    {
+      "original": "lutris",
+      "route": "fedora-apps",
+      "target": "lutris"
+    },
+    {
+      "original": "mpv",
+      "route": "fedora-apps",
+      "target": "mpv"
+    },
+    {
+      "original": "nautilus",
+      "route": "fedora-apps",
+      "target": "nautilus"
+    },
+    {
+      "original": "neovim",
+      "route": "fedora-apps",
+      "target": "neovim"
+    },
+    {
+      "original": "npm",
+      "route": "fedora-apps",
+      "target": "nodejs-npm"
+    },
+    {
+      "original": "obs-studio",
+      "route": "fedora-apps",
+      "target": "obs-studio"
+    },
+    {
+      "original": "obs-vkcapture",
+      "route": "fedora-apps",
+      "target": "obs-studio-plugin-vkcapture"
+    },
+    {
+      "original": "obsidian",
+      "route": "manual-source-review",
+      "target": "packages/fedora-manual-apps.md"
+    },
+    {
+      "original": "openai-codex",
+      "route": "manual-source-review",
+      "target": "packages/fedora-manual-apps.md"
+    },
+    {
+      "original": "otf-geist-mono-nerd",
+      "route": "manual-source-review",
+      "target": "packages/fedora-manual-apps.md"
+    },
+    {
+      "original": "paru",
+      "route": "arch-only-helper",
+      "target": "Not needed on Fedora; original inventory preserved"
+    },
+    {
+      "original": "prismlauncher",
+      "route": "fedora-apps",
+      "target": "prismlauncher"
+    },
+    {
+      "original": "proton-mail-bin",
+      "route": "manual-source-review",
+      "target": "packages/fedora-manual-apps.md"
+    },
+    {
+      "original": "proton-pass",
+      "route": "manual-source-review",
+      "target": "packages/fedora-manual-apps.md"
+    },
+    {
+      "original": "quickshell",
+      "route": "fedora-desktop",
+      "target": "quickshell"
+    },
+    {
+      "original": "satty",
+      "route": "fedora-apps",
+      "target": "satty"
+    },
+    {
+      "original": "steam",
+      "route": "fedora-apps",
+      "target": "steam"
+    },
+    {
+      "original": "thunar",
+      "route": "fedora-apps",
+      "target": "Thunar"
+    },
+    {
+      "original": "tree",
+      "route": "fedora-apps",
+      "target": "tree"
+    },
+    {
+      "original": "ttf-jetbrains-mono-nerd",
+      "route": "manual-source-review",
+      "target": "packages/fedora-manual-apps.md"
+    },
+    {
+      "original": "vscode-css-languageserver",
+      "route": "manual-source-review",
+      "target": "packages/fedora-manual-apps.md"
+    },
+    {
+      "original": "zen-browser-bin",
+      "route": "manual-source-review",
+      "target": "packages/fedora-manual-apps.md"
+    },
+    {
+      "original": "artcraft-launcher",
+      "route": "manual-source-review",
+      "target": "packages/fedora-manual-apps.md"
+    },
+    {
+      "original": "aseprite",
+      "route": "manual-source-review",
+      "target": "packages/fedora-manual-apps.md"
+    },
+    {
+      "original": "bedrock-on-linux-bin",
+      "route": "manual-source-review",
+      "target": "packages/fedora-manual-apps.md"
+    },
+    {
+      "original": "bibata-cursor-theme-bin",
+      "route": "manual-source-review",
+      "target": "packages/fedora-manual-apps.md"
+    },
+    {
+      "original": "obs-pipewire-audio-capture",
+      "route": "manual-source-review",
+      "target": "packages/fedora-manual-apps.md"
+    },
+    {
+      "original": "ttf-inter-hinted",
+      "route": "manual-source-review",
+      "target": "packages/fedora-manual-apps.md"
+    },
+    {
+      "original": "ttf-rubik-vf",
+      "route": "manual-source-review",
+      "target": "packages/fedora-manual-apps.md"
+    },
+    {
+      "original": "vesktop",
+      "route": "manual-source-review",
+      "target": "packages/fedora-manual-apps.md"
+    },
+    {
+      "original": "vscodium-bin",
+      "route": "manual-source-review",
+      "target": "packages/fedora-manual-apps.md"
+    },
+    {
+      "original": "jre8",
+      "route": "manual-source-review",
+      "target": "packages/fedora-manual-apps.md"
+    },
+    {
+      "original": "python-skia-pathops",
+      "route": "manual-source-review",
+      "target": "packages/fedora-manual-apps.md"
+    },
+    {
+      "original": "ttfautohint",
+      "route": "manual-source-review",
+      "target": "packages/fedora-manual-apps.md"
+    },
+    {
+      "original": "pdfcraft-0.7.1-linux-x86_64.AppImage",
+      "route": "manual-source-review",
+      "target": "packages/fedora-manual-apps.md"
+    },
+    {
+      "original": "wordcraft-0.6.1-linux-x86_64.AppImage",
+      "route": "manual-source-review",
+      "target": "packages/fedora-manual-apps.md"
+    },
+    {
+      "original": "photocraft-0.8.2-linux-x86_64.AppImage",
+      "route": "manual-source-review",
+      "target": "packages/fedora-manual-apps.md"
+    },
+    {
+      "original": "filmcraft-0.7.2-linux-x86_64.AppImage",
+      "route": "manual-source-review",
+      "target": "packages/fedora-manual-apps.md"
+    },
+    {
+      "original": "deckcraft-0.6.1-linux-x86_64.AppImage",
+      "route": "manual-source-review",
+      "target": "packages/fedora-manual-apps.md"
+    },
+    {
+      "original": "gridcraft-0.6.1-linux-x86_64.AppImage",
+      "route": "manual-source-review",
+      "target": "packages/fedora-manual-apps.md"
+    },
+    {
+      "original": "soundcraft-0.6.1-linux-x86_64.AppImage",
+      "route": "manual-source-review",
+      "target": "packages/fedora-manual-apps.md"
+    },
+    {
+      "original": "Codex local launcher",
+      "route": "manual-source-review",
+      "target": "packages/fedora-manual-apps.md"
+    },
+    {
+      "original": "ZuriTheme.zuritheme",
+      "route": "manual-source-review",
+      "target": "packages/fedora-manual-apps.md"
+    }
+  ]
+}

@@ -32,9 +32,8 @@ hl.bind(mainMod .. " + SHIFT + R", hl.dsp.exec_cmd("quickshell -p @@HOME@@/.conf
 
 
 -- ── Titlebars (hyprbars plugin) ───────────────────────────────────────────────
-local hyprbars = "/var/cache/hyprpm/user0/hyprland-plugins/hyprbars.so"
-hl.bind(mainMod .. " + Y",         hl.dsp.exec_cmd("hyprctl plugin load "   .. hyprbars))
-hl.bind(mainMod .. " + SHIFT + Y", hl.dsp.exec_cmd("hyprctl plugin unload " .. hyprbars))
+-- Optional hyprbars was bound to a machine-specific compiled Arch plugin.
+-- Rebuild/review a matching Fedora plugin before restoring Super+Y bindings.
 
 -- ── Layout switching ──────────────────────────────────────────────────────────
 hl.bind(mainMod .. " + J",         hl.dsp.layout("togglesplit"))
