@@ -77,6 +77,27 @@ chsh -s /usr/bin/zsh
 
 Open a new terminal to verify the prompt, colors, icons and Git status. Shell history, completion dumps, instant-prompt caches and credentials are excluded from GitHub. Aliases are preserved exactly, including aliases for `dust` and `nitch`, which were not found on the current command PATH; these commands need separate review if you want to use them. Aliases for `paru` require the separately reviewed foreign-package helper.
 
+## Your Neovim / NvChad setup
+
+All 13 current non-Git files under `.config/nvim` are included, including `init.lua`, Lua settings/mappings/plugin specifications and `lazy-lock.json`. The lockfile records 27 plugins, including NvChad v2.5. Its earlier snapshot differed only in whitespace/formatting; the same plugin revisions were already recorded. The Neovim package and Git are now in the prerequisite list.
+
+Downloaded upstream plugin repositories are recreated over the network. After the normal desktop restore, open `nvim`, let the bootstrap finish, and run:
+
+```vim
+:Lazy restore
+```
+
+This restores the plugin revisions in the saved lockfile ([lazy.nvim lockfile documentation](https://lazy.folke.io/usage/lockfile)). Close Neovim when it completes. Your current setup also has 23 custom files inside downloaded plugins: an Island theme-sync module, its startup hook and 21 Base46 themes. These are preserved separately under `nvim-overrides/`, so they do not create partial plugin directories before Lazy installs the plugins. From this checkout, run:
+
+```bash
+python3 scripts/restore-nvim-overrides.py --dry-run
+python3 scripts/restore-nvim-overrides.py --apply
+```
+
+The script checks source hashes, plugin Git revisions and the restored lockfile before copying additions back to their original `.local/share/nvim/lazy/NvChad/` and `base46/` locations. It skips identical files and backs up conflicts. Reopen Neovim and check `:IslandThemeReload`, the theme picker and desktop theme synchronization. Base46 compiled caches regenerate; they are not copied from the old installation. Reapply additions after plugin updates only after reviewing compatibility.
+
+Private undo history, ShaDa, swap files, recovery backups and logs are not public dotfiles. Keep them in the private backup if needed, especially unsaved editing work. The current config references `stylua` and the HTML language server, but neither command was found on the current PATH; the CSS language server is present. These pre-existing tool gaps need separate review. Plugin downloads/builds, language-server availability and the restored editor still require a live check.
+
 ## Important limits
 
 - Quickshell provides the notification server, popups and notification history. SwayNC is excluded from both reinstall lists. Its old configuration remains in the snapshot for reference but is not autostarted by the included Hyprland configuration. On the new installation, check that another notification daemon is not started by the installer or session.

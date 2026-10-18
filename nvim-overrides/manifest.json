@@ -1,0 +1,147 @@
+{
+  "plugins": {
+    "NvChad": "add44b952d631981614bbb8cfc6f7002f296dfe6",
+    "base46": "cbb71c6cb56f53b30ab1a95a6d277f7e0524025b"
+  },
+  "files": [
+    {
+      "source": "nvim-overrides/lazy/NvChad/lua/island_theme.lua",
+      "destination": ".local/share/nvim/lazy/NvChad/lua/island_theme.lua",
+      "sha256": "f433006ed60879629756b4f5c7015ba879f6b75600cdde76926b143ec92ca3f4",
+      "mode": 420
+    },
+    {
+      "source": "nvim-overrides/lazy/NvChad/plugin/island-theme.lua",
+      "destination": ".local/share/nvim/lazy/NvChad/plugin/island-theme.lua",
+      "sha256": "6beb9b778333e73a760cdb7b5eee124c0861f017e0f51ef6fcda9a0662032218",
+      "mode": 420
+    },
+    {
+      "source": "nvim-overrides/lazy/base46/lua/base46/themes/island_anime.lua",
+      "destination": ".local/share/nvim/lazy/base46/lua/base46/themes/island_anime.lua",
+      "sha256": "3d88e8e4df7966d1f02512430f4908702672a7186615912bb41bc1009f1845fe",
+      "mode": 420
+    },
+    {
+      "source": "nvim-overrides/lazy/base46/lua/base46/themes/island_ariadne.lua",
+      "destination": ".local/share/nvim/lazy/base46/lua/base46/themes/island_ariadne.lua",
+      "sha256": "a4fe5e8f01a8fb3adec73f863df41cf02f789983fff73e1b6d45e6ae01347805",
+      "mode": 420
+    },
+    {
+      "source": "nvim-overrides/lazy/base46/lua/base46/themes/island_catppuccin.lua",
+      "destination": ".local/share/nvim/lazy/base46/lua/base46/themes/island_catppuccin.lua",
+      "sha256": "be587c37d302e24e8f053e4e55564c4434987ce4e394c6cfdcb42ae073d181e0",
+      "mode": 420
+    },
+    {
+      "source": "nvim-overrides/lazy/base46/lua/base46/themes/island_dracula.lua",
+      "destination": ".local/share/nvim/lazy/base46/lua/base46/themes/island_dracula.lua",
+      "sha256": "922ca0b5f9d05a677f4b24a081d26a44897ffc5b6154fb0dab0c6a9497f5cb88",
+      "mode": 420
+    },
+    {
+      "source": "nvim-overrides/lazy/base46/lua/base46/themes/island_e_ink.lua",
+      "destination": ".local/share/nvim/lazy/base46/lua/base46/themes/island_e_ink.lua",
+      "sha256": "6647ea7314d1ec34afb06c7d4a063bd5ee90787cc6ee9a2c4564c987993e19fb",
+      "mode": 420
+    },
+    {
+      "source": "nvim-overrides/lazy/base46/lua/base46/themes/island_everblush.lua",
+      "destination": ".local/share/nvim/lazy/base46/lua/base46/themes/island_everblush.lua",
+      "sha256": "f2c0ca79fbef481903f10b1f5571288b648225f5a202311a75e386d12a4a5d9c",
+      "mode": 420
+    },
+    {
+      "source": "nvim-overrides/lazy/base46/lua/base46/themes/island_everforest.lua",
+      "destination": ".local/share/nvim/lazy/base46/lua/base46/themes/island_everforest.lua",
+      "sha256": "b88355b80aa34ee9e9e7574d59752f2cc607a664085faf69111913567ecf1f31",
+      "mode": 420
+    },
+    {
+      "source": "nvim-overrides/lazy/base46/lua/base46/themes/island_gruvbox.lua",
+      "destination": ".local/share/nvim/lazy/base46/lua/base46/themes/island_gruvbox.lua",
+      "sha256": "7554269f86b6c98c3c3b262d2741f584f553dea36de378db82e578424de81369",
+      "mode": 420
+    },
+    {
+      "source": "nvim-overrides/lazy/base46/lua/base46/themes/island_gruvbox_material.lua",
+      "destination": ".local/share/nvim/lazy/base46/lua/base46/themes/island_gruvbox_material.lua",
+      "sha256": "38d8a5df49a10ea362e31728137aa619784c9b33047b9eed16a2cfddea4ebde8",
+      "mode": 420
+    },
+    {
+      "source": "nvim-overrides/lazy/base46/lua/base46/themes/island_horizon.lua",
+      "destination": ".local/share/nvim/lazy/base46/lua/base46/themes/island_horizon.lua",
+      "sha256": "e1f1768211db3d3848fe9fbce18d1aa01f0cc27873c4dd95c31dc679ee481984",
+      "mode": 420
+    },
+    {
+      "source": "nvim-overrides/lazy/base46/lua/base46/themes/island_industrial.lua",
+      "destination": ".local/share/nvim/lazy/base46/lua/base46/themes/island_industrial.lua",
+      "sha256": "d1f197446d66dba8d0eb56c697ee0aa577207132cbc9e3cd8d53d031ae069c61",
+      "mode": 420
+    },
+    {
+      "source": "nvim-overrides/lazy/base46/lua/base46/themes/island_kanagawa.lua",
+      "destination": ".local/share/nvim/lazy/base46/lua/base46/themes/island_kanagawa.lua",
+      "sha256": "0ed19c34001a4c73136171d0cb93d7c4517e17d17313fd4729e85a185eb25b22",
+      "mode": 420
+    },
+    {
+      "source": "nvim-overrides/lazy/base46/lua/base46/themes/island_material_you.lua",
+      "destination": ".local/share/nvim/lazy/base46/lua/base46/themes/island_material_you.lua",
+      "sha256": "5eb93ce0e7fb6873f66e3d23e9e192c9cce5e4645be0346399d0217bcdf68d5a",
+      "mode": 420
+    },
+    {
+      "source": "nvim-overrides/lazy/base46/lua/base46/themes/island_monochrome.lua",
+      "destination": ".local/share/nvim/lazy/base46/lua/base46/themes/island_monochrome.lua",
+      "sha256": "4d87acc0dcf046e49e8540e9168c621ab2aea5bb85e658a5fb4d342c01473ed1",
+      "mode": 420
+    },
+    {
+      "source": "nvim-overrides/lazy/base46/lua/base46/themes/island_nord.lua",
+      "destination": ".local/share/nvim/lazy/base46/lua/base46/themes/island_nord.lua",
+      "sha256": "41549056ee74fbeb94ca82041812f0412188f809139c4be7b2c135b96c13cae5",
+      "mode": 420
+    },
+    {
+      "source": "nvim-overrides/lazy/base46/lua/base46/themes/island_ocean.lua",
+      "destination": ".local/share/nvim/lazy/base46/lua/base46/themes/island_ocean.lua",
+      "sha256": "71a3c4f6e7a8ef892a119bce575b6e9e30a6c20915742980ca5e8d9d8c0592f0",
+      "mode": 420
+    },
+    {
+      "source": "nvim-overrides/lazy/base46/lua/base46/themes/island_oxocarbon.lua",
+      "destination": ".local/share/nvim/lazy/base46/lua/base46/themes/island_oxocarbon.lua",
+      "sha256": "1fa24a7947c9a367209c253432afd5754f7a597176d1c8024e4105079882c768",
+      "mode": 420
+    },
+    {
+      "source": "nvim-overrides/lazy/base46/lua/base46/themes/island_rose_pine.lua",
+      "destination": ".local/share/nvim/lazy/base46/lua/base46/themes/island_rose_pine.lua",
+      "sha256": "9fc48c3c1600160a8e351a36d2e2e437adeae924fad0461f91330a4f0c59b60c",
+      "mode": 420
+    },
+    {
+      "source": "nvim-overrides/lazy/base46/lua/base46/themes/island_rxyhn.lua",
+      "destination": ".local/share/nvim/lazy/base46/lua/base46/themes/island_rxyhn.lua",
+      "sha256": "6b4fd92a96d288a3068acbd6214b9ac66a581f0ad49e29584afd6b039a47a4ed",
+      "mode": 420
+    },
+    {
+      "source": "nvim-overrides/lazy/base46/lua/base46/themes/island_solarized.lua",
+      "destination": ".local/share/nvim/lazy/base46/lua/base46/themes/island_solarized.lua",
+      "sha256": "f0fba18492c6569d3c8ec83ef9bf9d4ad8c6b2d21cd8424a43ad4834c491a600",
+      "mode": 420
+    },
+    {
+      "source": "nvim-overrides/lazy/base46/lua/base46/themes/island_tokyo_night.lua",
+      "destination": ".local/share/nvim/lazy/base46/lua/base46/themes/island_tokyo_night.lua",
+      "sha256": "571e860f3f0758a913bf2a6afd7e6c8aaae6fea38f9eb45ccf4ed0f61c1ef01e",
+      "mode": 420
+    }
+  ],
+  "restore_after": "Install plugins with :Lazy restore; close Neovim; then restore these additions."
+}
