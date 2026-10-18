@@ -98,6 +98,12 @@ The script checks source hashes, plugin Git revisions and the restored lockfile 
 
 Private undo history, ShaDa, swap files, recovery backups and logs are not public dotfiles. Keep them in the private backup if needed, especially unsaved editing work. The current config references `stylua` and the HTML language server, but neither command was found on the current PATH; the CSS language server is present. These pre-existing tool gaps need separate review. Plugin downloads/builds, language-server availability and the restored editor still require a live check.
 
+## VSCodium theme synchronization
+
+ZuriTheme 0.0.2 includes its activation entrypoint, Island file watcher and palette-generation JavaScript, alongside all bundled theme assets. `zuritheme.syncWithIsland` is explicitly enabled in the restored VSCodium settings. On startup, the extension reads `~/.config/island-shell/theme-state.json` (or the equivalent under `XDG_CONFIG_HOME`) and selects the matching editor theme. While the editor is open, it watches for Island theme changes and updates automatically. Material You uses the shared dynamic palette too.
+
+The normal desktop restore includes these files; reopen VSCodium afterward. Check that ZuriTheme is enabled, then switch the desktop theme with Super+T. If needed, run **ZuriTheme: Sync with Island** from the command palette. An extension setting or an overriding workspace/profile preference can affect the result. The synchronization logic was checked with a simulated editor and temporary state files, including an atomic state-file replacement; the restored graphical editor still needs a live check.
+
 ## Important limits
 
 - Quickshell provides the notification server, popups and notification history. SwayNC is excluded from both reinstall lists. Its old configuration remains in the snapshot for reference but is not autostarted by the included Hyprland configuration. On the new installation, check that another notification daemon is not started by the installer or session.
